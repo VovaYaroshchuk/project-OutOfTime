@@ -5,45 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
-    <section>
+    <section class="section__about">
       <div class="container">
-        <p class="about__overtitle">tradition and love</p>
+        <label class="about__label">tradition and love</label>
         <h2 class="about__title">how it’s made?</h2>
-      </div>
 
-      <div class="about__main">
-        <picture>
-          <source
-            srcset="./images/desk/about_d_1x.jpg 1x, ./images/desk/about_d_2x.jpg 2x"
-            media="(min-width:1200px)"
-            type="image/png"
-          />
-          <img
-            src="./images/desk/about_d_1x.jpg"
-            alt="корова и кувшин молока "
-            width="516"
-            height="516"
-          />
-        </picture>
+        <div class="about__main">
+          <picture>
+            <source
+              srcset="
+                ./images/desk/how-its-made-desk-1x.png 1x,
+                ./images/desk/how-its-made-desk-2x.png 2x
+              "
+              media="(min-width:1200px)"
+              type="image/png"
+            />
+            <img
+              src="./images/desk/how-its-made-desk-1x.png"
+              alt="корова и кувшин молока "
+              width="516"
+              height="516"
+            />
+          </picture>
 
-        <p>
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor.<br />
-          Nam vel justo cursus, faucibus lorem eget, egestas eros.<br />
-          Maecenas eleifend erat at justo fringilla.
-        </p>
+          <div class="about__composition">
+            <p class="composition">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor.<br />
+              Nam vel justo cursus, faucibus lorem eget, egestas eros.<br />
+              Maecenas eleifend erat at justo fringilla.
+            </p>
 
-        <p>
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio<br />
-          elementum. Mauris rhoncus orci in imperdiet placerat.<br />
-          Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-          tincidunt.<br />
-          Aliquam erat volutpat. Aenean accumsan.
-        </p>
+            <p class="cooking">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio<br />
+              elementum. Mauris rhoncus orci in imperdiet placerat.<br />
+              Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna<br />
+              maximus. Cras massa nibh, tincidunt.<br />
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
 
-        <button type="button" class="about__button">Read more</button>
+            <button type="button" class="about__button">Read more</button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
