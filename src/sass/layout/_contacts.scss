@@ -1,0 +1,13 @@
+.contacts {
+  &__list {
+    margin: -84px 50px 0 50px;
+  }
+  &__item {
+    width: 100%;
+    min-width: 220px;
+    max-width: 380px;
+    &:not(:last-child) {
+      border: 1px solid #e1e1e1;
+    }
+  }
+}

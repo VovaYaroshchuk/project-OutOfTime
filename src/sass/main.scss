@@ -2,5 +2,8 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
+@import './utils/mixins';
+@import './base/reset';
+@import './base/base';
+@import './components/container';
 // Стили для файла с примером HTML-фрагмента

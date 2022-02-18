@@ -1,0 +1,29 @@
+@mixin font($fs: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin tel {
+  @media screen and (mіn-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin dpr2 {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
