@@ -7,14 +7,16 @@ h5,
 h6 {
   margin: 0;
 }
-ul {
+ul,
+ol {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
-.link {
-  text-decoration: none;
-  color: inherit;
+button {
+  cursor: pointer;
 }
-.list {
-  list-style: none;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
