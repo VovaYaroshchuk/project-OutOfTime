@@ -74,12 +74,12 @@ img {
 }
 
 .section__about {
-  text-align: center;
   background-color: #fff5f6;
   background-image: url(../images/desk/sectionbg1-desk-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  text-align: center;
 }
 
 .about__main {
@@ -138,6 +138,7 @@ img {
 }
 
 .about__button {
+  display: block;
   font-family: "DM Sans";
   height: 44px;
   width: 176px;
@@ -151,4 +152,5 @@ img {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
+  margin-left: 75px;
 }/*# sourceMappingURL=main.css.map */
