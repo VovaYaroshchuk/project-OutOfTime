@@ -1,10 +1,3 @@
-@mixin font($fs: 14px, $fw: 400, $lh: 1.71, $ls: 0.03em) {
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
-
 @mixin tel {
   @media screen and (mіn-width: 480px) {
     @content;
@@ -22,8 +15,23 @@
     @content;
   }
 }
-@mixin dpr2 {
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    @content;
-  }
+@mixin mobile__title--h2 {
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
+@mixin mobile__title--h3 {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+// пример
+// .title__h2{
+// @include mobile__title--h2;
+// }
+//
