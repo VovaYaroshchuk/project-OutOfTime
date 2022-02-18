@@ -30,7 +30,7 @@
 
 .about__label {
   color: #ffa5ba;
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -42,7 +42,7 @@
 
 .about__title {
   color: #d41443;
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -53,6 +53,7 @@
 }
 
 .composition {
+  font-family: 'DM Sans';
   text-align: left;
   font-style: normal;
   font-weight: 500;
@@ -64,6 +65,7 @@
 }
 
 .cooking {
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -77,6 +79,7 @@
 }
 
 .about__button {
+  font-family: 'DM Sans';
   height: 44px;
   width: 176px;
   background-color: #fff;
