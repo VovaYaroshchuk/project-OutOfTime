@@ -65,7 +65,7 @@
    height: 150%;
     top: 102px;
     left: 14px;
-    background-image: url(../images/tab/arrow.png);
+    background-image: url(../images/tab/arrow.svg);
      background-size: auto, auto;
     background-position: 83% 100%;
     background-repeat: no-repeat;
@@ -207,7 +207,7 @@ align-items: flex-end;
   font-style: normal;
   font-weight: 400;
   line-height: 46px;
-  letter-spacing: 0em;
+  letter-spacing: 0.04em;
   text-align: left;
   color: $brand-color;
   @media screen and (min-width: 768px) {
@@ -217,7 +217,7 @@ align-items: flex-end;
 }
 
 .button {
-  padding: 9px 15px 9px 15px;
+  padding: 8px 13px 8px 13px;
   border-radius: 20px;
   font-family: DM Sans;
   font-style: normal;
@@ -236,6 +236,7 @@ align-items: flex-end;
 .hero__container-products-btn {
   background-color: $brand-color;
   color: #ffffff;
+  margin-right: 8px;
 }
 
 .hero__container-him-btn {
