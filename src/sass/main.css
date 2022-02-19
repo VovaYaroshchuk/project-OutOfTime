@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  background-color: #ffb8ca;
+  background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto, 346px 346px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .hero {
+    padding-left: 20px;
+    padding-top: 101px;
+    background-position: 70% 0, -85% -15%;
+    background-size: auto, 346px 346px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-position: 50% 75%, 50% -15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-size: auto, auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/tab/hero-icecream-tab-1x.png),
+      url(../images/tel/Ellipse-tel1-1x.png);
+    padding-top: 102px;
+    height: 399px;
+    width: 768px;
+    padding-left: 34px;
+    background-position: 60% 100%, 67% 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tab/hero-icecream-tab-2x.png),
+      url(../images/tel/Ellipse-tel1-2x.png);
+  }
+}
+
+.hero__cercle {
+  display: inline-block;
+  border: #ffffff;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .pretitle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pretitle {
+    font-family: Titan One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0em;
+    color: #d41443;
+    position: absolute;
+    text-align: left;
+    right: 34px;
+  }
+}
+
+.hero__figures-16 {
+  top: 96px;
+}
+
+.hero__figures-23 {
+  top: 152px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero_girl-container {
+    background-image: url(../images/tab/hero-girl-tab-1x.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 133px;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero_milk-container {
+    background-image: url(../images/tab/hero-milk-tab-1x.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 133px;
+    position: absolute;
+    bottom: 18px;
+    left: 34px;
+  }
+}
+
+.hero__title-h2 {
+  width: 114px;
+  height: 48px;
+  margin-left: 120px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title-h2 {
+    display: none;
+  }
+}
+
+.hero__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .hero__title {
+    padding-top: 10px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
+}
+
+.hero__passion {
+  font-family: Titan One;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__passion {
+    font-size: 34px;
+    line-height: 0.9;
+  }
+}
+
+.button {
+  padding: 9px 15px 9px 15px;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  border: none;
+  margin-bottom: 66px;
+}
+
+.hero__container-btn {
+  width: 100%;
+}
+
+.hero__container-products-btn {
+  background-color: #d41443;
+  color: #ffffff;
+}
+
+.hero__container-him-btn {
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+/*# sourceMappingURL=main.css.map */
