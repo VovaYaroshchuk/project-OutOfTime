@@ -4,6 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
 @import './utils/viriables';
 @import './utils/mixins';
 @import './base/reset';
@@ -13,5 +14,8 @@
 @import './components/container';
 
 @import './products';
+@import './components/gallery';
+
 @import './layout/contacts';
 @import './footer';
+
