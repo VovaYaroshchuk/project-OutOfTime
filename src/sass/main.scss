@@ -6,9 +6,17 @@
 // Стили для файла с примером HTML-фрагмента
 
 @import "./hero";
+@import './utils/viriables';
 @import './utils/mixins';
 @import './base/reset';
+@import './base/base';
 @import './base/common';
 @import './utils/hidden';
-@import "./utils/viriables";
+@import './components/container';
+
 @import './products';
+@import './components/gallery';
+
+@import './layout/contacts';
+@import './footer';
+
