@@ -5,10 +5,11 @@
 
 // Стили для файла с примером HTML-фрагмента
 
-
 @import './utils/mixins';
+@import './utils/viriables';
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
 
 @import './products';
+@import './footer';
