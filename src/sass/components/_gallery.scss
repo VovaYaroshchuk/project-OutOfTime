@@ -12,6 +12,10 @@
   }
 }
 
+.gallery__icon {
+  padding-bottom: 16px;
+}
+
 .gallery__list {
   align-items: left;
   padding-bottom: 38px;
@@ -29,6 +33,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  padding-bottom: 15px;
 }
 
 .gallery__text {
