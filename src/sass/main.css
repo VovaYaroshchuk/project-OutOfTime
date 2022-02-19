@@ -90,8 +90,6 @@ img {
   width: 198px;
   height: 21px;
 }
-<<<<<<< Updated upstream
-=======
 @media screen and (min-width: 768px) {
   .about__label {
     font-size: 26px;
@@ -112,7 +110,6 @@ img {
     height: 34px;
   }
 }
->>>>>>> Stashed changes
 
 .about__name {
   display: flex;
@@ -134,10 +131,6 @@ img {
   height: 76px;
   margin: 15px 0 26px 0;
 }
-<<<<<<< Updated upstream
-
-.about__picture {
-=======
 @media screen and (min-width: 768px) {
   .about__title {
     font-size: 48px;
@@ -178,7 +171,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
->>>>>>> Stashed changes
   margin-left: auto;
   margin-right: auto;
 }
@@ -192,8 +184,6 @@ img {
   text-align: left;
   margin: 46px 50px 47px 50px;
 }
-<<<<<<< Updated upstream
-=======
 @media screen and (min-width: 768px) {
   .composition {
     font-size: 14px;
@@ -212,7 +202,6 @@ img {
     margin-left: 74px;
   }
 }
->>>>>>> Stashed changes
 
 .cooking {
   color: #907e82;
@@ -224,8 +213,6 @@ img {
   text-align: left;
   margin: 0 50px 47px 50px;
 }
-<<<<<<< Updated upstream
-=======
 @media screen and (min-width: 768px) {
   .cooking {
     font-size: 14px;
@@ -246,7 +233,6 @@ img {
     margin-bottom: 45px;
   }
 }
->>>>>>> Stashed changes
 
 .about__button {
   display: block;
@@ -264,8 +250,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   margin-left: 50px;
-<<<<<<< Updated upstream
-=======
 }
 @media screen and (min-width: 768px) {
   .about__button {
@@ -294,5 +278,4 @@ img {
   .about__composition {
     background-image: none;
   }
->>>>>>> Stashed changes
 }/*# sourceMappingURL=main.css.map */
