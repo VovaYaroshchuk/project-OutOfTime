@@ -4,12 +4,19 @@
     "sources": [
         "main.scss",
         "utils/_mixins.scss",
-        "utils/_viriables.scss",
         "base/_reset.scss",
+
+
+        "base/_base.scss",
         "base/_common.scss",
         "utils/_hidden.scss",
+        "components/_container.scss",
         "_products.scss",
+        "layout/_contacts.scss"
         "_footer.scss"
+        "_products.scss"
+
+
     ],
     "names": [],
     "file": "main.css"
