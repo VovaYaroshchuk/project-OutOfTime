@@ -15,23 +15,3 @@
     @content;
   }
 }
-@mixin mobile__title--h2 {
-  font-size: 34px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-}
-@mixin mobile__title--h3 {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-// пример
-// .title__h2{
-// @include mobile__title--h2;
-// }
-//
