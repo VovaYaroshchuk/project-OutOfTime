@@ -3,9 +3,9 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 410px;
+  height: 502px;
   background-color: #ffb8ca;
-  background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
+  background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
   }
@@ -16,17 +16,22 @@
 
   @media screen and (min-width: 320px) {
     padding-left: 20px;
-    padding-top: 101px;
+    // padding-top: 101px;
     background-position: 70% 0, 80% 0;
     background-size: auto;
     margin-left: 0;
+    background-position: 70% 100%, 100% 55%;
   }
 
   @media screen and (min-width: 480px) {
+      background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
+  }
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
-    background-position: 50% 75%, 50% -15%;
+    background-position: 45% 100%, 50% 60%;
   }
   @media screen and (min-width: 768px) {
     background-size: auto, auto;
@@ -38,29 +43,38 @@
       background-image: url(../images/tab/hero-icecream-tab-2x.png),
         url(../images/tel/Ellipse-tel1-2x.png);
     }
-    padding-top: 102px;
+    // padding-top: 102px;
     height: 399px;
     width: 768px;
     padding-left: 34px;
     background-position: 60% 100%, 67% 50%;
   }
 }
-.hero__cercle {
-  display: inline-block;
-  border: #ffffff;
-  width: 16px;
-  height: 16px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  // position: absolute;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  padding-right: 5px;
-}
-.pretitle {
-  @media screen and (max-width: 767px) {
-    display: none;
+// .hero__container {
+//     width: 25%;
+// }
+.hero_title-container {
+     @media screen and (min-width: 320px) {
+   position: absolute;
+   width: 218px;
+    top: 193px;
   }
+       @media screen and (min-width: 768px) {
+   position: relative;
+   width: 162px;
+   height: 150%;
+    top: 102px;
+    left: 14px;
+    background-image: url(../images/tab/arrow.png);
+     background-size: auto, auto;
+    background-position: 83% 100%;
+    background-repeat: no-repeat;
+    z-index: 7;
+  } 
+
+}
+
+.pretitle {
   @media screen and (min-width: 768px) {
     font-family: Titan One;
     font-size: 28px;
@@ -69,17 +83,59 @@
     line-height: 1.14;
     letter-spacing: 0em;
     color: $brand-color;
-    position: absolute;
-    text-align: left;
-    right: 34px;
   }
+  .hero__cercle {
+position: relative;
+  display: inline-block;
+  border: #ffffff;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+right: -8px;
+bottom:  35px;
+z-index: -1;
+
 }
-.hero__figures-16 {
-  top: 96px;
 }
-.hero__figures-23 {
-  top: 152px;
+.hero__figures{
+    position: absolute;
+    right: 34px;
+    top: 96px;
+    z-index: 1;
+     @media screen and (max-width: 767px) {
+    display: none;
+  }
+   }
+.hero__figures-text{
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 10px;
+text-align: right;
+position:absolute;
+width: 43px;
+top: 30px;
+// right: -5px;
+color: #FFFFFF;
 }
+.pretitle{
+ position: relative;
+ z-index: 1;
+}
+.hero__figures-16, .hero__figures-23{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+// margin-bottom: 24px;
+// position: relative;
+// z-index: 2;
+}
+//  {
+// //   top: 152px;
+// }
 
 .hero_girl-container {
   @media screen and (min-width: 768px) {
@@ -106,8 +162,9 @@
 
 .hero__title-h2 {
   width: 114px;
-  height: 48px;
+  height: 70px;
   margin-left: 120px;
+  bottom: 50px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -137,7 +194,7 @@
     font-size: 26px;
     line-height: 30px;
     @media screen and (min-width: 768px) {
-      padding-top: 10px;
+    //   padding-top: 10px;
       font-size: 22px;
       line-height: 1.14;
     }
@@ -152,7 +209,7 @@
   line-height: 46px;
   letter-spacing: 0em;
   text-align: left;
-  color: #d41443;
+  color: $brand-color;
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 0.9;
@@ -177,11 +234,11 @@
   }
 }
 .hero__container-products-btn {
-  background-color: #d41443;
+  background-color: $brand-color;
   color: #ffffff;
 }
 
 .hero__container-him-btn {
   background-color: #ffffff;
-  color: #d41443;
+  color: $brand-color;
 }
