@@ -16,6 +16,7 @@
   }
 }
 @mixin mobile__title--h2 {
+  font-family: $font-family-title;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
@@ -24,6 +25,7 @@
   color: #d41443;
 }
 @mixin mobile__title--h3 {
+  font-family: $font-family-text;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
