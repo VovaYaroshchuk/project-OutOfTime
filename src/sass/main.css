@@ -1338,12 +1338,19 @@ img {
 
 .footer__title-container {
   max-width: 234px;
-  margin-bottom: 43px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__title-container {
-    width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__title-container {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
 }
 
@@ -1357,17 +1364,86 @@ img {
   color: #ffa5ba;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
 .footer__accent-title {
   display: block;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   color: #d41443;
-  margin-top: 17px;
+
+  margin-top: 16px;
 }
 
-.footer__contacts-container {
-  margin-bottom: 43px;
+@media screen and (min-width: 768px) {
+  .footer__accent-title {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+
+  margin-top: 17px;
+
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__accent-title {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__contacts-container,
+  .footer__title-container {
+    margin-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .footer__container {
+    margin-bottom: 100px;
+  }
 }
 
 .networks {
@@ -1384,8 +1460,44 @@ img {
   margin-bottom: 46px;
 }
 
+@media screen and (min-width: 1280px) {
+  .networks {
+    margin-bottom: 50px;
+  }
+}
+
 .networks__item:not(:last-child) {
   margin-right: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .networks__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .networks__item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.networks__link {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  border-radius: 4px;
+  height: 16px;
+}
+
+.contacts__title-wrap_fst, .contacts__title-wrap_thrt {
+  background-color: #f0d1a5;
+  width: 80px;
 }
 
 
@@ -1452,6 +1564,13 @@ img {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .networks__link {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 .networks__link:hover {
   background-color: #d41443;
 }
@@ -1461,6 +1580,13 @@ img {
   height: 19px;
 }
 
+@media screen and (min-width: 768px) {
+  .networks__icon--github {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .networks__icon--telegram {
   width: 21px;
   height: 21px;
@@ -1468,9 +1594,23 @@ img {
   transform: translateX(-1px);
 }
 
+@media screen and (min-width: 768px) {
+  .networks__icon--telegram {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .networks__icon--facebook {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .networks__icon--facebook {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .call {
@@ -1479,6 +1619,19 @@ img {
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .call {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .call {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .call__link {
@@ -1496,6 +1649,18 @@ img {
   border-top: 1px solid #e1e1e1;
 }
 
+@media screen and (min-width: 768px) {
+  .copy-container {
+    padding: 29px 0 18px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .copy-container {
+    padding: 10px 0;
+  }
+}
+
 .сopyright {
   font-family: DM Sans;
   font-weight: 700;
@@ -1508,6 +1673,13 @@ img {
   .сopyright {
     display: inline-block;
     max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .сopyright {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
   }
 }
 
