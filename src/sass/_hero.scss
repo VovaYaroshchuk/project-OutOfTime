@@ -1,6 +1,7 @@
 @import './utils/viriables';
 
 .hero {
+margin-left:  0;
   position: relative;
   width: 100%;
   height: 502px;
@@ -15,7 +16,7 @@
   background-size: auto, 346px 346px;
 
   @media screen and (min-width: 320px) {
-    padding-left: 20px;
+    // padding-left: 20px;
     // padding-top: 101px;
     background-position: 70% 0, 80% 0;
     background-size: auto;
@@ -30,7 +31,7 @@
   }
     width: 480px;
     padding-left: 20px;
-    padding-right: 20px;
+    // padding-right: 20px;
     background-position: 45% 100%, 50% 60%;
   }
   @media screen and (min-width: 768px) {
@@ -49,6 +50,22 @@
     padding-left: 34px;
     background-position: 60% 100%, 67% 50%;
   }
+  @media screen and (min-width: 1200px) {
+    background-size: auto, 538px 538px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url(../images/desk/hero-icecream-desk-1x.png),
+      url(../images/desk/Ellipse-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desk/hero-icecream-desk-2x.png),
+        url(../images/desk/Ellipse-des-2x.png);
+    }
+    // padding-right: 97px;
+    height: 665px;
+    width: 1280px;
+    padding-left: 0;
+    background-position: 60% 100%, 67% 50%;
+  }
 }
 // .hero__container {
 //     width: 25%;
@@ -56,21 +73,32 @@
 .hero_title-container {
      @media screen and (min-width: 320px) {
    position: absolute;
-   width: 218px;
+   width: 100%;
     top: 193px;
   }
        @media screen and (min-width: 768px) {
    position: relative;
-   width: 162px;
    height: 150%;
     top: 102px;
     left: 14px;
     background-image: url(../images/tab/arrow.svg);
      background-size: auto, auto;
-    background-position: 83% 100%;
+    background-position: 17% 100%;
     background-repeat: no-repeat;
     z-index: 7;
   } 
+  @media screen and (min-width: 1200px) {
+   position: relative;
+   height: 150%;
+    top: 171px;
+    left: 115px;
+    background-image: url(../images/tab/arrow.svg);
+     background-size: auto, auto;
+    background-position: 12% 100%;
+    background-repeat: no-repeat;
+    z-index: 7;
+  } 
+
 
 }
 
@@ -83,7 +111,15 @@
     line-height: 1.14;
     letter-spacing: 0em;
     color: $brand-color;
+     position: relative;
+ z-index: 1;
   }
+   @media screen and (min-width: 768px) {
+font-size: 46px;
+line-height: 1.15;
+  }
+}
+
   .hero__cercle {
 position: relative;
   display: inline-block;
@@ -95,9 +131,14 @@ position: relative;
 right: -8px;
 bottom:  35px;
 z-index: -1;
+   @media screen and (min-width: 1200px) {
+width: 30px;
+  height: 30px;
+  right: -8px;
+bottom:  60px;
+  }
+}
 
-}
-}
 .hero__figures{
     position: absolute;
     right: 34px;
@@ -105,6 +146,10 @@ z-index: -1;
     z-index: 1;
      @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+   right: 97px;
+    top: 156px;
   }
    }
 .hero__figures-text{
@@ -119,15 +164,22 @@ width: 43px;
 top: 30px;
 // right: -5px;
 color: #FFFFFF;
+@media screen and (min-width: 1200px) {
+   right:0px;
+    top: 50px;
+    width: 74px;
+    font-size: 14px;
+line-height: 1.3;
+  }
 }
-.pretitle{
- position: relative;
- z-index: 1;
-}
+
 .hero__figures-16, .hero__figures-23{
 display: flex;
 flex-direction: column;
 align-items: flex-end;
+@media screen and (min-width: 1200px) {
+margin-bottom: 24px;
+  }
 
 // margin-bottom: 24px;
 // position: relative;
@@ -140,23 +192,50 @@ align-items: flex-end;
 .hero_girl-container {
   @media screen and (min-width: 768px) {
     background-image: url(../images/tab/hero-girl-tab-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tab/hero-girl-tab-2x.png);
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
     position: absolute;
+    z-index: 5;
     bottom: 0;
-    right: 34px;
+    right: 0;
+  }}
+   @media screen and (min-width: 1200px) {
+    background-image: url(../images/desk/hero-girl-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desk/hero-girl-desk-2x.png)};
+    background-repeat: no-repeat;
+    width: 293px;
+    height: 232px;
+    position: absolute;
+    bottom: 0;
+    right: 97px;
   }
 }
 .hero_milk-container {
   @media screen and (min-width: 768px) {
     background-image: url(../images/tab/hero-milk-tab-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tab/hero-milk-tab-2x.png)};
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
     position: absolute;
     bottom: 18px;
     left: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desk/hero-milk-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desk/hero-milk-desk-2x.png)};
+    background-repeat: no-repeat;
+    width: 188px;
+    height: 191px;
+    position: absolute;
+    bottom: 48px;
+    left: 77px;
   }
 }
 
@@ -173,6 +252,13 @@ align-items: flex-end;
   color: #ffffff;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+font-size: 14px;
+line-height: 1.42;
+width: 230px;
+height: 110px;
+padding-left: 30px;
   }
 }
 .hero__container {
@@ -192,14 +278,19 @@ align-items: flex-end;
   margin-bottom: 19px;
   @media screen and (min-width: 480px) {
     font-size: 26px;
-    line-height: 30px;
+    line-height: 30px;}
     @media screen and (min-width: 768px) {
     //   padding-top: 10px;
       font-size: 22px;
       line-height: 1.14;
     }
-  }
-}
+     @media screen and (min-width: 1200px) {
+    //   padding-top: 10px;
+      font-size: 38px;
+      line-height: 1.16;
+      margin-bottom: 25px;
+  }}
+
 
 .hero__passion {
   font-family: Titan One;
@@ -214,6 +305,10 @@ align-items: flex-end;
     font-size: 34px;
     line-height: 0.9;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.12;
+  }
 }
 
 .button {
@@ -226,10 +321,16 @@ align-items: flex-end;
   line-height: 1.25;
   border: none;
   margin-bottom: 66px;
+   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  line-height: 1.3;
+  padding: 11px 20px 11px 20px;
+  margin-bottom: 112px;
+  }
 }
 
 .hero__container-btn {
-  width: 100%;
+  width: 50%;
   @media screen and (min-width: 480px) {
   }
 }

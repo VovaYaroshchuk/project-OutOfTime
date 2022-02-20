@@ -4,6 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 .hero {
+  margin-left: 0;
   position: relative;
   width: 100%;
   height: 502px;
@@ -23,7 +24,6 @@
 
 @media screen and (min-width: 320px) {
   .hero {
-    padding-left: 20px;
     background-position: 70% 0, 80% 0;
     background-size: auto;
     margin-left: 0;
@@ -36,7 +36,6 @@
     background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
     width: 480px;
     padding-left: 20px;
-    padding-right: 20px;
     background-position: 45% 100%, 50% 60%;
   }
 }
@@ -66,10 +65,28 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-size: auto, auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/desk/hero-icecream-desk-1x.png), url(../images/desk/Ellipse-desk-1x.png);
+    height: 665px;
+    width: 1280px;
+    background-position: 60% 100%, 67% 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desk/hero-icecream-desk-2x.png), url(../images/desk/Ellipse-des-2x.png);
+  }
+}
+
 @media screen and (min-width: 320px) {
   .hero_title-container {
     position: absolute;
-    width: 218px;
+    width: 100%;
     top: 193px;
   }
 }
@@ -77,7 +94,6 @@
 @media screen and (min-width: 768px) {
   .hero_title-container {
     position: relative;
-    width: 162px;
     height: 150%;
     top: 102px;
     left: 14px;
@@ -161,12 +177,36 @@
 @media screen and (min-width: 768px) {
   .hero_girl-container {
     background-image: url(../images/tab/hero-girl-tab-1x.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero_girl-container {
+    background-image: url(../images/tab/hero-girl-tab-2x.png);
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
     position: absolute;
     bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_girl-container {
+    background-image: url(../images/desk/hero-girl-desk-1x.png);
+    background-repeat: no-repeat;
+    width: 293px;
+    height: 232px;
+    position: absolute;
+    bottom: 0;
     right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero_girl-container {
+    background-image: url(../images/desk/hero-girl-desk-2x.png);
   }
 }
 
@@ -179,6 +219,30 @@
     position: absolute;
     bottom: 18px;
     left: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero_milk-container {
+    background-image: url(../images/tab/hero-milk-tab-2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_milk-container {
+    background-image: url(../images/desk/hero-milk-desk-1x.png);
+    background-repeat: no-repeat;
+    width: 188px;
+    height: 191px;
+    position: absolute;
+    bottom: 18px;
+    left: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero_milk-container {
+    background-image: url(../images/desk/hero-milk-desk-2x.png);
   }
 }
 
@@ -220,10 +284,17 @@
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     font-size: 22px;
     line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.16;
   }
 }
 
@@ -242,6 +313,13 @@
   .hero__passion {
     font-size: 34px;
     line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__passion {
+    font-size: 58px;
+    line-height: 1.12;
   }
 }
 
