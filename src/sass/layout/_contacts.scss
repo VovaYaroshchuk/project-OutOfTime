@@ -1,50 +1,119 @@
 .contacts {
   &__wrap {
     background: #fff5f6;
+    @include desk {
+      background-image: url('../images/contact_img/contact-bg.png');
+      min-width: 1200px;
+      max-width: 1600px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: 0 auto;
+      width: 100%;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/contact_img/contact-bg_x2.png');
+      }
+    }
+    @media screen and (max-width: 767px) {
+      position: relative;
+    }
+  }
+  &__shift {
+    padding: 0 35px;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: -84px;
+    }
+    @include tab {
+      padding: 0 16px;
+    }
+    @include desk {
+      padding: 0;
+    }
   }
   &__list {
-    margin-top: -84px;
+    @include tab {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__item {
     min-width: 220px;
     max-width: 380px;
-    margin-right: 50px;
-    margin-left: 50px;
     padding: 43px 20px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    background-color: white;
+    @include tab {
+      margin-top: -78px;
+      width: 220px;
+      padding: 50px 31px;
+    }
+    @include desk {
+      margin-top: -102px;
+      padding: 51px 43px 62px 43px;
+      width: 330px;
+    }
     &:not(:last-child) {
-      margin-bottom: 20px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+      @include tab {
+        margin-right: 20px;
+      }
+      @include desk {
+        margin-right: 30px;
+      }
     }
   }
   &__title {
-    &-wrap {
-      padding: 0 25px;
-      display: flex;
-      align-items: center;
-      border-radius: 4px;
-      height: 16px;
-      &_fst,
-      &_thrt {
-        background-color: #f0d1a5;
-        width: 80px;
-      }
-      &_scnd {
-        background-color: #c2e297;
-        width: 130px;
-      }
-    }
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+    @include tab {
+      font-size: 16px;
+    }
+    &-wrap {
+      padding: 0 25px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      height: 16px;
+      @include tab {
+        padding: 0 15px;
+      }
+      &_fst,
+      &_thrt {
+        background-color: #f0d1a5;
+        width: 80px;
+        @include tab {
+          width: 73px;
+        }
+      }
+      &_scnd {
+        background-color: #c2e297;
+        width: 130px;
+        @include tab {
+          width: 138px;
+        }
+      }
+    }
   }
   &__place {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e1e1e1;
+    @include tab {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @include desk {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__town {
     margin-bottom: 10px;
@@ -52,6 +121,14 @@
     line-height: 1.86;
     color: #000000;
     letter-spacing: 0.04em;
+    @include tab {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    @include desk {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
   &__text {
     line-height: 1.5;
@@ -61,19 +138,94 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #e1e1e1;
+    @include tab {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @include desk {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__details {
     padding-top: 25px;
+    @include tab {
+      padding-top: 30px;
+    }
+    @include desk {
+      padding-top: 32px;
+    }
   }
   &__btn {
+    border-radius: 22px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 1.31;
+    font-weight: bold;
+    border: none;
+    @media screen and (max-width: 767px) {
+      margin-right: 80px;
+      margin-left: 80px;
+      min-width: 160px;
+      max-width: 320px;
+    }
     &:not(:last-child) {
-      margin-bottom: 10px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+    @include tab {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+    &_top {
+      background: #d41342;
+      color: #ffffff;
+      @include tab {
+        width: 191px;
+      }
+      @include desk {
+        width: 198px;
+      }
+    }
+    &_bottom {
+      color: #d41342;
+      background: #ffffff;
+      @include tab {
+        width: 174px;
+      }
+      @include desk {
+        width: 180px;
+      }
     }
     &-box {
       margin-top: 54px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include tab {
+        margin-top: 81px;
+        flex-direction: row;
+      }
+    }
+  }
+  &__img {
+    display: inline;
+    &_top {
+      margin-left: 8px;
+      @include tab {
+        margin-left: 13px;
+      }
+      @include desk {
+        margin-left: 14px;
+      }
+    }
+    &_bottom {
+      margin-left: 13px;
+      @include desk {
+        margin-left: 14px;
+      }
     }
   }
 }
@@ -82,14 +234,26 @@
     font-size: 12px;
     line-height: 1.86;
     color: #000000;
+    @include tab {
+      font-size: 14px;
+    }
+    @include desk {
+      font-size: 16px;
+    }
   }
   &__time {
-    line-height: 186%;
+    line-height: 1.86;
     color: #ffa5ba;
   }
   &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
+      @include tab {
+        margin-bottom: 16px;
+      }
+      @include desk {
+        margin-bottom: 15px;
+      }
     }
   }
 }
