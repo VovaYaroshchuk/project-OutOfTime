@@ -339,9 +339,19 @@
   background-color: $brand-color;
   color: #ffffff;
   margin-right: 8px;
+  &:hover{
+      background-color: #ECEBEB;
+      border: 2px solid$brand-color;
+      color: $brand-color;
+  }
 }
 
 .hero__container-him-btn {
   background-color: #ffffff;
   color: $brand-color;
+   &:hover{
+      background-color: #ECEBEB;
+      border: 2px solid$brand-color;
+      color: $brand-color;
+  }
 }
