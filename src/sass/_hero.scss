@@ -73,7 +73,6 @@
 .hero_title-container {
   @media screen and (min-width: 320px) {
     position: absolute;
-    width: 100%;
     top: 193px;
     left: 20px;
   }
@@ -194,7 +193,7 @@
     position: absolute;
     z-index: 5;
     bottom: 0;
-    right: 0;
+    right: 34px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(../images/desk/hero-girl-desk-1x.png);
@@ -328,11 +327,6 @@
   }
 }
 
-.hero__container-btn {
-  width: 50%;
-  @media screen and (min-width: 480px) {
-  }
-}
 .hero__container-products-btn {
   background-color: $brand-color;
   color: #ffffff;
