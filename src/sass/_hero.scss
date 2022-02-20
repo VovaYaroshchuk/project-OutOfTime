@@ -1,7 +1,7 @@
 @import './utils/viriables';
 
 .hero {
-margin-left:  0;
+  margin-left: 0;
   position: relative;
   width: 100%;
   height: 502px;
@@ -25,10 +25,10 @@ margin-left:  0;
   }
 
   @media screen and (min-width: 480px) {
-      background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
-  }
+    background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
+    }
     width: 480px;
     padding-left: 20px;
     // padding-right: 20px;
@@ -52,7 +52,7 @@ margin-left:  0;
   }
   @media screen and (min-width: 1200px) {
     background-size: auto, 538px 538px;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/desk/hero-icecream-desk-1x.png),
       url(../images/desk/Ellipse-desk-1x.png);
@@ -71,35 +71,34 @@ margin-left:  0;
 //     width: 25%;
 // }
 .hero_title-container {
-     @media screen and (min-width: 320px) {
-   position: absolute;
-   width: 100%;
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    width: 100%;
     top: 193px;
+    left: 20px;
   }
-       @media screen and (min-width: 768px) {
-   position: relative;
-   height: 150%;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    height: 150%;
     top: 102px;
     left: 14px;
     background-image: url(../images/tab/arrow.svg);
-     background-size: auto, auto;
+    background-size: auto, auto;
     background-position: 17% 100%;
     background-repeat: no-repeat;
     z-index: 7;
-  } 
+  }
   @media screen and (min-width: 1200px) {
-   position: relative;
-   height: 150%;
+    position: relative;
+    height: 150%;
     top: 171px;
     left: 115px;
     background-image: url(../images/tab/arrow.svg);
-     background-size: auto, auto;
+    background-size: auto, auto;
     background-position: 12% 100%;
     background-repeat: no-repeat;
     z-index: 7;
-  } 
-
-
+  }
 }
 
 .pretitle {
@@ -111,89 +110,84 @@ margin-left:  0;
     line-height: 1.14;
     letter-spacing: 0em;
     color: $brand-color;
-     position: relative;
- z-index: 1;
+    position: relative;
+    z-index: 1;
   }
-   @media screen and (min-width: 768px) {
-font-size: 46px;
-line-height: 1.15;
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.15;
   }
 }
 
-  .hero__cercle {
-position: relative;
+.hero__cercle {
+  position: relative;
   display: inline-block;
   border: #ffffff;
   width: 16px;
   height: 16px;
   background-color: #ffffff;
   border-radius: 50%;
-right: -8px;
-bottom:  35px;
-z-index: -1;
-   @media screen and (min-width: 1200px) {
-width: 30px;
-  height: 30px;
   right: -8px;
-bottom:  60px;
+  bottom: 35px;
+  z-index: -1;
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    right: -8px;
+    bottom: 60px;
   }
 }
 
-.hero__figures{
-    position: absolute;
-    right: 34px;
-    top: 96px;
-    z-index: 1;
-     @media screen and (max-width: 767px) {
+.hero__figures {
+  position: absolute;
+  right: 34px;
+  top: 96px;
+  z-index: 1;
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
-   right: 97px;
+    right: 97px;
     top: 156px;
   }
-   }
-.hero__figures-text{
-font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 8px;
-line-height: 10px;
-text-align: right;
-position:absolute;
-width: 43px;
-top: 30px;
-// right: -5px;
-color: #FFFFFF;
-@media screen and (min-width: 1200px) {
-   right:0px;
+}
+.hero__figures-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  position: absolute;
+  width: 43px;
+  top: 30px;
+  // right: -5px;
+  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    right: 0px;
     top: 50px;
     width: 74px;
     font-size: 14px;
-line-height: 1.3;
+    line-height: 1.3;
   }
 }
 
-.hero__figures-16, .hero__figures-23{
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-@media screen and (min-width: 1200px) {
-margin-bottom: 24px;
+.hero__figures-16,
+.hero__figures-23 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 24px;
   }
-
-// margin-bottom: 24px;
-// position: relative;
-// z-index: 2;
 }
-//  {
-// //   top: 152px;
-// }
 
 .hero_girl-container {
   @media screen and (min-width: 768px) {
     background-image: url(../images/tab/hero-girl-tab-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/tab/hero-girl-tab-2x.png);
+    }
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
@@ -201,11 +195,12 @@ margin-bottom: 24px;
     z-index: 5;
     bottom: 0;
     right: 0;
-  }}
-   @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/desk/hero-girl-desk-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desk/hero-girl-desk-2x.png)};
+      background-image: url(../images/desk/hero-girl-desk-2x.png);
+    }
     background-repeat: no-repeat;
     width: 293px;
     height: 232px;
@@ -214,11 +209,13 @@ margin-bottom: 24px;
     right: 97px;
   }
 }
+
 .hero_milk-container {
   @media screen and (min-width: 768px) {
     background-image: url(../images/tab/hero-milk-tab-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tab/hero-milk-tab-2x.png)};
+      background-image: url(../images/tab/hero-milk-tab-2x.png);
+    }
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
@@ -229,7 +226,8 @@ margin-bottom: 24px;
   @media screen and (min-width: 1200px) {
     background-image: url(../images/desk/hero-milk-desk-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desk/hero-milk-desk-2x.png)};
+      background-image: url(../images/desk/hero-milk-desk-2x.png);
+    }
     background-repeat: no-repeat;
     width: 188px;
     height: 191px;
@@ -254,11 +252,11 @@ margin-bottom: 24px;
     display: none;
   }
   @media screen and (min-width: 1200px) {
-font-size: 14px;
-line-height: 1.42;
-width: 230px;
-height: 110px;
-padding-left: 30px;
+    font-size: 14px;
+    line-height: 1.42;
+    width: 230px;
+    height: 110px;
+    padding-left: 30px;
   }
 }
 .hero__container {
@@ -278,19 +276,20 @@ padding-left: 30px;
   margin-bottom: 19px;
   @media screen and (min-width: 480px) {
     font-size: 26px;
-    line-height: 30px;}
-    @media screen and (min-width: 768px) {
+    line-height: 30px;
+  }
+  @media screen and (min-width: 768px) {
     //   padding-top: 10px;
-      font-size: 22px;
-      line-height: 1.14;
-    }
-     @media screen and (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
     //   padding-top: 10px;
-      font-size: 38px;
-      line-height: 1.16;
-      margin-bottom: 25px;
-  }}
-
+    font-size: 38px;
+    line-height: 1.16;
+    margin-bottom: 25px;
+  }
+}
 
 .hero__passion {
   font-family: Titan One;
@@ -321,11 +320,11 @@ padding-left: 30px;
   line-height: 1.25;
   border: none;
   margin-bottom: 66px;
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
-  line-height: 1.3;
-  padding: 11px 20px 11px 20px;
-  margin-bottom: 112px;
+    line-height: 1.3;
+    padding: 11px 20px 11px 20px;
+    margin-bottom: 112px;
   }
 }
 
