@@ -1278,6 +1278,34 @@ a {
     margin-top: 45px;
   }
 }
+.about__button:hover, .about__button:focus {
+  background: linear-gradient(270deg, #9ae87d, #eaa9df, #1feada, #d3ea1f);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .about__composition {
   background-image: url(../images/tel/sectionbg-tel-1x.png);
