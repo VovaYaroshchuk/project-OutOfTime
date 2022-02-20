@@ -1,12 +1,29 @@
-    <header class="header">
-        <div class="container">
-            <!-- =============================== Будет таб и моб меню, пока скрыто ================================= -->
-            <button hidden class="header-menu__burger-batton" type="button">
-                <svg width=12px height=20px aria-label="Кнопка мобильного меню">
-                    <use class="header-menu__icon-menu" href="#"></use>
-                    <use class="header-menu__icon-cross" href="#"></use>
+<header class="header">
+    <div class="container">
+        <!-- =============================== Будет таб и моб меню, пока скрыто ================================= -->
+        <div class="header-menu__burger-batton">
+            <svg class="header-menu__battons" width=20px height=12px aria-label="Кнопка мобильного меню" data-menu-button>
+                <use class="header-menu__icon-menu" href="./images/svg/spred-menu-buttons.svg#icon-burger" ></use>
+                <use class="header-menu__icon-cross" href="./images/svg/spred-menu-buttons.svg#icon-close"></use>
+            </svg>
+        </div>
+        <div class="header-menu__container" id="header-menu__container" data-menu>
+            <button class="header-menu__buy-button" type="button">Buy now
+                <svg class="header-menu__buy-button-icon" width=4px height=8px>
+                    <use href="./images/svg/Vector.svg"></use>
                 </svg>
             </button>
+            <ul class="header-menu__boxes">
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Home</a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">About us</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">How it’s made?</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Our products</a></li>
+                <li class="header-menu__item"><a href="#" class="header-menu__link">Contact</a></li>
+            </ul>
+        </div>
+        <!-- =============================== Header deck =============================== -->
+        <div class="header-navbar-container">
             <div hidden class="header-menu__container" id="header-menu__container" data-menu>
                 <button class="header-menu__buy-button" type="button">
                     Buy now
@@ -43,43 +60,30 @@
                 </ul>
             </div>
             <!-- =============================== Header deck =============================== -->
+
             <nav class="header-navbar">
                 <a href="#" class="header-navbar__logo">
-                    <picture>
-                        <source srcset="./images/tel/logo-tel-1x.png 1x, ./images/tel/logo-tel-2x.png 2x" media="(min-width: 320px)" />
+                    <picture class="header-navbar__logo-img">
+                        <source srcset="./images/tel/logo-tel-1x.png 1x, ./images/tel/logo-tel-2x.png 2x"
+                            media="(min-width: 320px)" />
                         <img class="logo" src="./images/tel/logo-tel-1x.png" alt="Icecream" />
                     </picture>
                 </a>
                 <ul class="header-navbar__boxes">
-                    <li class="header-navbar__item">
-                        <a href="#" class="header-navbar__link header-navbar__link--activ">
-                        Home
-                    </a>
-                    </li>
-                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">
-                        About us
-                    </a>
-                    </li>
-                    <li class="header-navbar__item">
-                        <a href="#" class="header-navbar__link">
-                        How it’s made?
-                    </a>
-                    </li>
-                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">
-                        Our products
-                    </a>
-                    </li>
-                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">
-                        Contact
-                    </a>
-                    </li>
+
+                    <li class="header-navbar__item"><a href="#"
+                            class="header-navbar__link header-navbar__link--activ">Home</a></li>
+                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">About us</a></li>
+                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">How it’s made?</a></li>
+                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">Our products</a></li>
+                    <li class="header-navbar__item"><a href="#" class="header-navbar__link">Contact</a></li>
                 </ul>
             </nav>
             <button class="header-navbar__buy-button" type="button">Buy now
-                <svg class="header-navbar__buy-button-icon" width="8" height="8">
-                    <use href="./images/svg/sprite.svg#icon-circle-right" ></use>
+                <svg class="header-navbar__buy-button-icon" width=4px height=8px>
+                    <use href="./images/svg/Vector.svg"></use>
                 </svg>
-            </button>  
+            </button>
         </div>
-    </header>
-    
+    </div>
+</header>

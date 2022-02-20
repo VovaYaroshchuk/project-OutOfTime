@@ -8,6 +8,7 @@
         "main.scss",
         "_hero.scss",
         "utils/_viriables.scss",
+
         "utils/_viriables.scss",
         "utils/_mixins.scss",
         "base/_reset.scss",
@@ -15,6 +16,7 @@
         "base/_common.scss",
         "utils/_hidden.scss",
         "components/_container.scss",
+        "layout/_header.scss",
         "_products.scss",
         "components/_gallery.scss",
         "layout/_contacts.scss",

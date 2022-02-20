@@ -1,0 +1,166 @@
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.header-menu__link,
+.header-navbar__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+
+.header-menu__buy-button {
+  width: 209px;
+  height: 44px;
+  left: 21px;
+  top: 60px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  align-items: center;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+}
+.header-navbar__buy-button {
+  width: 160px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  align-items: center;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+}
+
+.header {
+  display: flex;
+  position: relative;
+  background-color: #ffb8ca;
+  justify-content: space-between;
+}
+
+.header-navbar-container {
+  padding: 6px 0 0 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 37px 26px 0 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-navbar,
+  .header-navbar__boxes {
+    display: flex;
+  }
+  .header-navbar__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  //   .header-navbar {
+  //     margin: 0 26px;
+  //   }
+  .header-navbar__boxes {
+    padding: 0 110px;
+    margin: auto;
+  }
+}
+
+.header-menu__buy-button {
+  margin: 60px 0 32px 21px;
+}
+
+.header-menu__item {
+  padding: 11px 0 13px 21px;
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+.header-menu__burger-batton {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+  z-index: 4;
+  @media screen and (min-width: 768px) {
+    top: 52px;
+    right: 224px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-navbar__buy-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header-navbar__boxes {
+    display: none;
+  }
+}
+
+// Модальное меню
+.header-menu__container {
+  display: none;
+}
+
+.header-menu__container.is-open {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+  background-color: #e17992;
+  right: 0;
+}
+
+// Кнопка бургер
+.header-menu__icon-cross {
+  fill: #ffffff;
+}
+.header-menu__battons .header-menu__icon-cross {
+  display: none;
+}
+.header-menu__battons.is-open .header-menu__icon-cross {
+  display: block;
+}
+.header-menu__battons.is-open .header-menu__icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-menu__battons {
+    display: none;
+  }
+}
+
+// надо подкоючить этот скрипт над уже существующим в файле index.html
+
+// <script src="./menu.js"></script>
