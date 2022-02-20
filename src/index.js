@@ -1,6 +1,6 @@
 import './sass/main.scss';
 
-import "./js";
+// import "./js";
 
-import 'animate.css';
+// import 'animate.css';
 
