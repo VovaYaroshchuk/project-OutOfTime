@@ -67,7 +67,9 @@
 .networks__link:hover {
   background-color: $brand-color;
 }
-
+.networks__icon {
+  fill: #ffffff;
+}
 .networks__icon--github {
   width: 19px;
   height: 19px;
