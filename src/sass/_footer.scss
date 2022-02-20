@@ -9,10 +9,17 @@
 
 .footer__title-container {
   max-width: 234px;
-  margin-bottom: 43px;
+}
 
-  @include tab {
-    width: 340px;
+@include tab {
+  .footer__title-container {
+    max-width: 340px;
+  }
+}
+
+@include desk {
+  .footer__title-container {
+    max-width: max-content;
   }
 }
 
@@ -23,6 +30,17 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: #ffa5ba;
+
+  @include tab {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+
+  @include desk {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .footer__accent-title {
@@ -33,11 +51,53 @@
   letter-spacing: 0.04em;
   color: $brand-color;
 
-  margin-top: 17px;
+  margin-top: 16px;
+
+  @include tab {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+
+  @include desk {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
-.footer__contacts-container {
-  margin-bottom: 43px;
+@media screen and (max-width: 767px) {
+  .footer__contacts-container,
+  .footer__title-container {
+    margin-bottom: 43px;
+  }
+}
+
+@include tab {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 90px;
+  }
+}
+
+@include desk {
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  .footer__container {
+    margin-bottom: 100px;
+  }
 }
 
 .networks {
@@ -47,10 +107,22 @@
   justify-content: flex-end;
 
   margin-bottom: 46px;
+
+  @include desk {
+    margin-bottom: 50px;
+  }
 }
 
 .networks__item:not(:last-child) {
   margin-right: 28px;
+
+  @include tab {
+    margin-right: 30px;
+  }
+
+  @include desk {
+    margin-right: 24px;
+  }
 }
 
 .networks__link {
@@ -62,26 +134,48 @@
   height: 32px;
   background-color: #fea5bb;
   border-radius: 50%;
+
+  @include tab {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .networks__link:hover {
   background-color: $brand-color;
 }
-
+.networks__icon {
+  fill: #ffffff;
+}
 .networks__icon--github {
   width: 19px;
   height: 19px;
+
+  @include tab {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .networks__icon--telegram {
   width: 21px;
   height: 21px;
   transform: translateX(-1px);
+
+  @include tab {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .networks__icon--facebook {
   width: 20px;
   height: 20px;
+
+  @include tab {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .call {
@@ -91,6 +185,15 @@
   line-height: 1.86;
 
   text-align: right;
+
+  @include tab {
+    font-size: 14px;
+  }
+
+  @include desk {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .call__link {
@@ -106,6 +209,13 @@
   text-align: center;
   padding: 22px 0 25px 0;
   border-top: 1px solid #e1e1e1;
+
+  @include tab {
+    padding: 29px 0 18px 0;
+  }
+  @include desk {
+    padding: 10px 0;
+  }
 }
 
 .сopyright {
@@ -118,6 +228,11 @@
   @media screen and (max-width: 480px) {
     display: inline-block;
     max-width: 150px;
+  }
+
+  @include tab {
+    line-height: 1.86;
+    letter-spacing: 0.02em;
   }
 }
 

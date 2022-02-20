@@ -11,11 +11,68 @@
 }
 
 @mixin desk {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
 @mixin mobile__title--h2 {
+  @media screen and (min-width: 300px) and (max-width: 771px) {
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $brand-color;
+  }
+  @media screen and (min-width: 771px) and (max-width: 1279px) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1279px) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+@mixin mobile__title--h3 {
+  @media screen and (min-width: 300px) and (max-width: 771px) {
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+  }
+  @media screen and (min-width: 771px) and (max-width: 1279px) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1279px) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  font-family: $font-family-title;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
@@ -23,13 +80,7 @@
   text-transform: uppercase;
   color: #d41443;
 }
-@mixin mobile__title--h3 {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
+
 // пример
 // .title__h2{
 // @include mobile__title--h2;

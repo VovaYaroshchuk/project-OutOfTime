@@ -5,16 +5,18 @@
 
 // Стили для файла с примером HTML-фрагмента
 
-@import './utils/viriables';
 @import './utils/mixins';
 @import './base/reset';
 @import './base/base';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/viriables';
+
 @import './components/container';
 
+@import './hero';
 @import './products';
 @import './components/gallery';
-
+@import './customer__reviews';
 @import './layout/contacts';
 @import './footer';
