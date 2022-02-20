@@ -1,11 +1,64 @@
+// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.container-gallery {
+  background-color: #fff5f6;
+  width: 100%;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 .gallery {
+  @media screen and (min-width: 320px) {
+    margin-left: 20px;
+    margin-right: 200px;
+    margin-bottom: 59px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: 76px;
+    margin-bottom: 140px;
   }
   @media screen and (min-width: 1280) {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+  }
+}
+
+.gallery__icon {
+  @media screen and (min-width: 480px) {
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
+  }
+}
+
+.gallery__list {
+  align-items: left;
+  padding-bottom: 38px;
+  list-style-type: none;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    flex-basis: calc(100% / 3 - 60px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 60px;
+
+    flex-basis: calc(100% / 3 - 60px);
   }
 }
 
@@ -13,21 +66,39 @@
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 58px;
+  font-size: 36px;
   line-height: 1.14;
-  text-align: right;
+
+  text-align: left;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #d41443;
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
 .gallery__text {
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 1.76;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.02em;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
