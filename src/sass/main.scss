@@ -7,7 +7,23 @@
 
 @import './utils/mixins';
 @import './base/reset';
+@import './base/base';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/viriables';
+
+
+
+
+@import "./hero";
+
+
+@import './components/container';
+
 @import './products';
+@import './components/gallery';
 @import './customer__reviews';
+@import './layout/contacts';
+@import './footer';
+
+
