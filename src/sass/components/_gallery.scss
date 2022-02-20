@@ -1,25 +1,46 @@
 .gallery {
-  margin-left: 20px;
-  margin-right: 70px;
-  margin-bottom: 59px;
+  @media screen and (min-width: 320px) {
+    margin-left: 20px;
+    margin-right: 70px;
+    margin-bottom: 59px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: 36px;
+    margin-right: 76px;
+    margin-bottom: 140px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 }
 
 .gallery__icon {
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
+  }
 }
 
 .gallery__list {
   align-items: left;
   padding-bottom: 38px;
   list-style-type: none;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    flex-basis: calc(100% / 3 - 60px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 60px;
+
+    flex-basis: calc(100% / 3 - 60px);
+  }
 }
 
 .gallery__title {
@@ -34,6 +55,15 @@
   text-transform: uppercase;
   color: #d41443;
   padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
 .gallery__text {
@@ -44,4 +74,12 @@
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
