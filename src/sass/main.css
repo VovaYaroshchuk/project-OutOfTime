@@ -16,7 +16,10 @@
   background-size: auto, 346px 346px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
   }
@@ -40,7 +43,10 @@
   }
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
   }
@@ -51,7 +57,8 @@
     background-size: auto, auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/tab/hero-icecream-tab-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
+    background-image: url(../images/tab/hero-icecream-tab-1x.png),
+      url(../images/tel/Ellipse-tel1-1x.png);
     height: 399px;
     width: 768px;
     padding-left: 34px;
@@ -59,27 +66,36 @@
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/tab/hero-icecream-tab-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
+    background-image: url(../images/tab/hero-icecream-tab-2x.png),
+      url(../images/tel/Ellipse-tel1-2x.png);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .hero {
     background-size: auto, auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/desk/hero-icecream-desk-1x.png), url(../images/desk/Ellipse-desk-1x.png);
+    background-image: url(../images/desk/hero-icecream-desk-1x.png),
+      url(../images/desk/Ellipse-desk-1x.png);
     height: 665px;
     width: 1280px;
     background-position: 60% 100%, 67% 50%;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (min-resolution: 192dpi),
+  screen and (min-width: 1280) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/desk/hero-icecream-desk-2x.png), url(../images/desk/Ellipse-des-2x.png);
+    background-image: url(../images/desk/hero-icecream-desk-2x.png),
+      url(../images/desk/Ellipse-des-2x.png);
   }
 }
 
@@ -153,7 +169,7 @@
   position: absolute;
   width: 43px;
   top: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .pretitle {
@@ -161,17 +177,18 @@
   z-index: 1;
 }
 
-.hero__figures-16, .hero__figures-23 {
+.hero__figures-16,
+.hero__figures-23 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,7 +197,10 @@
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero_girl-container {
     background-image: url(../images/tab/hero-girl-tab-2x.png);
     background-repeat: no-repeat;
@@ -192,7 +212,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .hero_girl-container {
     background-image: url(../images/desk/hero-girl-desk-1x.png);
     background-repeat: no-repeat;
@@ -204,7 +224,10 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (min-resolution: 192dpi),
+  screen and (min-width: 1280) and (min-resolution: 2dppx) {
   .hero_girl-container {
     background-image: url(../images/desk/hero-girl-desk-2x.png);
   }
@@ -222,13 +245,16 @@
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero_milk-container {
     background-image: url(../images/tab/hero-milk-tab-2x.png);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .hero_milk-container {
     background-image: url(../images/desk/hero-milk-desk-1x.png);
     background-repeat: no-repeat;
@@ -240,7 +266,10 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280) and (min-resolution: 192dpi),
+  screen and (min-width: 1280) and (min-resolution: 2dppx) {
   .hero_milk-container {
     background-image: url(../images/desk/hero-milk-desk-2x.png);
   }
@@ -291,7 +320,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .hero__title {
     font-size: 38px;
     line-height: 1.16;
@@ -316,7 +345,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .hero__passion {
     font-size: 58px;
     line-height: 1.12;
@@ -388,8 +417,7 @@ img {
   display: block;
 }
 
-Contacts
-.list {
+Contacts .list {
   list-style: none;
 }
 
@@ -428,9 +456,9 @@ Contacts
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .container {
-    width: 1200px;
+    width: 1280;
   }
 }
 
@@ -440,17 +468,17 @@ Contacts
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280) {
   .gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -491,7 +519,7 @@ Contacts
   margin-left: 50px;
   padding: 43px 20px;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 
@@ -514,13 +542,14 @@ Contacts
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   height: 16px;
 }
 
-.contacts__title-wrap_fst, .contacts__title-wrap_thrt {
+.contacts__title-wrap_fst,
+.contacts__title-wrap_thrt {
   background-color: #f0d1a5;
   width: 80px;
 }
@@ -570,11 +599,11 @@ Contacts
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .schedule__days {
@@ -645,11 +674,11 @@ Contacts
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-bottom: 46px;
 }
 
@@ -662,11 +691,11 @@ Contacts
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
   background-color: #fea5bb;
@@ -686,7 +715,7 @@ Contacts
   width: 21px;
   height: 21px;
   -webkit-transform: translateX(-1px);
-          transform: translateX(-1px);
+  transform: translateX(-1px);
 }
 
 .networks__icon--facebook {
