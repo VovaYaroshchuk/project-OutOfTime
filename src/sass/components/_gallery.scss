@@ -16,7 +16,6 @@
   }
 }
 .gallery {
-  // background-color: #fff5f6;
   @media screen and (min-width: 320px) {
     margin-left: 20px;
     margin-right: 200px;
@@ -25,7 +24,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 36px;
+    margin-left: -24px;
     margin-right: 76px;
     margin-bottom: 140px;
   }
