@@ -1139,6 +1139,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 125px;
 }
 
 .about__title {
@@ -1179,7 +1180,6 @@ a {
   .about__main {
     display: flex;
     align-items: center;
-    margin-top: 100px;
   }
 }
 
@@ -1216,6 +1216,8 @@ a {
     letter-spacing: 0.04em;
     color: #000000;
     margin-left: 74px;
+    width: 463px;
+    height: 79px;
   }
 }
 
@@ -1247,6 +1249,8 @@ a {
     margin-left: 74px;
     margin-top: 35px;
     margin-bottom: 45px;
+    width: 463px;
+    height: 155px;
   }
 }
 
