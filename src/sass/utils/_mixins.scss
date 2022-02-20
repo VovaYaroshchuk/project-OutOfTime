@@ -11,7 +11,7 @@
 }
 
 @mixin desk {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
@@ -71,6 +71,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
+
+  font-family: $font-family-title;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+
 }
 // пример
 // .title__h2{

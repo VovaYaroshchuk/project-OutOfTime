@@ -3,4 +3,10 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 16px;
+  }
 }

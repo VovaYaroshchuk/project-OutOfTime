@@ -18,7 +18,7 @@
         <picture>
           <source
             srcset="./images/desk/about_d_1x.jpg 1x, ./images/desk/about_d_2x.jpg 2x"
-            media="(min-width:1200px)"
+            media="(min-width:1280)"
             type="image/png"
           />
           <img
@@ -43,7 +43,12 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
 
-        <button type="button" class="about__button">Read more</button>
+        <button type="button" class="about__button">
+          Read more
+        <svg class="about__button--svg" width="8" height="8">
+          <use href="./images/svg/sprite.svg#icon-circle-right"></use>
+        </svg>
+      </button>
       </div>
     </section>
   </body>
