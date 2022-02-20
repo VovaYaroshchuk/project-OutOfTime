@@ -1,19 +1,16 @@
 .contacts {
-  &__wrap {
-    background: #fff5f6;
-    @include desk {
-      background-image: url('../images/contact_img/contact-bg.png');
-      min-width: 1200px;
-      max-width: 1600px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin: 0 auto;
-      width: 100%;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/contact_img/contact-bg_x2.png');
-      }
+  background: #fff5f6;
+  @include desk {
+    background-image: url('../images/contact_img/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contact_img/contact-bg_x2.png');
     }
+  }
+  &__wrap {
     @media screen and (max-width: 767px) {
       position: relative;
     }
