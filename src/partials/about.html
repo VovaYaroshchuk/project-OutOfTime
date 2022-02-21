@@ -1,11 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <link rel="stylesheet" href="./animate.css" />
 <link rel="stylesheet" href="./sass/main.css" />
-
 <section class="section__about">
   <div class="container__about">
     <div class="about__name">
@@ -27,13 +25,11 @@
         <img class="about__picture" src="./images/desk/how-its-made-desk-1x.png" alt="корова и кувшин молока "
           width="516" height="516" />
       </picture>
-
       <div class="about__composition">
         <p class="composition wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s" data-wow-offset="30">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
-
         <p class="cooking wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s" data-wow-offset="35">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
@@ -42,7 +38,6 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-
         <button about-data-modal-open type="button" class="about__button">
           Read more
           <svg width="4.43" height="8" viewBox="0 0 8 10" fill="none">
@@ -78,14 +73,11 @@
         closeModalBtn: document.querySelector('[about-data-modal-close]'),
         modal: document.querySelector('[about-data-modal]'),
       };
-
       refs.openModalBtn.addEventListener('click', toggleModal);
       refs.closeModalBtn.addEventListener('click', toggleModal);
-
       function toggleModal() {
         refs.modal.classList.toggle('is-hidden');
       }
     })();
   </script>
-  
 </section>
