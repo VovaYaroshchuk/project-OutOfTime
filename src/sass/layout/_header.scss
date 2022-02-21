@@ -7,6 +7,9 @@ a {
   padding: 0 15px;
   width: 100%;
   @media screen and (min-width: 768px) {
+    position: relative;
+    padding: 0 34px 0 34px;
+    width: 768px;
     margin: 0 auto;
   }
   @media screen and (min-width: 1280px) {
@@ -57,6 +60,7 @@ a {
   .header-navbar__boxes {
     padding: 0 110px;
     margin: auto;
+    z-index: 10;
   }
 }
 
