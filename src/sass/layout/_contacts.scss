@@ -13,6 +13,7 @@
   &__wrap {
     @media screen and (max-width: 767px) {
       position: relative;
+      height: 1377px;
     }
   }
   &__shift {
@@ -298,12 +299,156 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__close {
     width: 10px;
   }
   &__img {
-    object-fit: cover;
+    object-fit: contain;
+  }
+}
+.franchise {
+  background: #fff5f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 5px solid #d41342;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 50px 35px;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition-property: transform babackground;
+  transition-duration: 500ms;
+  transition-delay: 250ms;
+  &_size {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      min-width: 320px;
+      max-width: 480px;
+    }
+    @include tab {
+      width: 700px;
+    }
+    @include desk {
+      width: 1000px;
+    }
+  }
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -250%) scale(0.3) rotate(90deg);
+  }
+  &__btn {
+    background-color: transparent;
+    border: 5px solid #d41342;
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close {
+    width: 10px;
+  }
+  &__title {
+    @include mobile__title--h2;
+  }
+  &__pre-title {
+    @include mobile__title--h3;
+  }
+  &__box_top {
+    margin-bottom: 30px;
+  }
+  &__box_bottom {
+    border: 5px solid #d41342;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  &__text {
+    line-height: 1.5;
+    color: #907e82;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.franchise-form {
+  margin-top: 30px;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #d41342;
+    padding: 25px;
+    border-radius: 20px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      min-width: 230px;
+      max-width: 400px;
+    }
+    @include tab {
+      width: 600px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__name {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    @include tab {
+      font-size: 14px;
+    }
+    @include desk {
+      font-size: 16px;
+    }
+  }
+  &__input {
+    border: 2px solid #d41342;
+    height: 40px;
+    width: 100%;
+    min-width: 180px;
+    max-width: 340px;
+    border-radius: 20px;
+    line-height: 1.5;
+    color: #907e82;
+    @include tab {
+      width: 450px;
+    }
+    @include desk {
+      width: 550px;
+    }
+  }
+  &__btn {
+    border-radius: 22px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 1.31;
+    font-weight: 900;
+    border: 5px solid #d41342;
+    color: #d41342;
+    background: #ffffff;
+    width: 200px;
+    @include tab {
+      width: 250px;
+      line-height: 1.5;
+    }
+    @include desk {
+      width: 300px;
+      line-height: 1.8;
+    }
   }
 }

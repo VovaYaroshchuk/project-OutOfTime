@@ -1,8 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="./animate.css" />
+<link rel="stylesheet" href="./sass/main.css" />
+
 <section class="section__about">
   <div class="container__about">
     <div class="about__name">
-      <label class="about__label animate__animated animate__bounce animate__slow">tradition and love</label>
-      <h2 class="about__title animate__animated animate__bounce animate__slow" id="How">
+      <label class="about__label wow bounce" data-wow-duration="1.4s" data-wow-offset="10">tradition and love</label>
+      <h2 class="about__title wow bounce" data-wow-duration="1.4s" data-wow-offset="10" id="How">
         how it’s made?
       </h2>
     </div>
@@ -21,12 +29,12 @@
       </picture>
 
       <div class="about__composition">
-        <p class="composition animate__animated animate__fadeIn animate__slower animate__delay-1.75s">
+        <p class="composition wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s" data-wow-offset="30">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
 
-        <p class="cooking animate__animated animate__fadeIn animate__slower animate__delay-1.75s">
+        <p class="cooking wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s" data-wow-offset="35">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
           maximus. Cras massa nibh, tincidunt.
@@ -59,6 +67,10 @@
       </div>
     </div>
   </div>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script>
     (() => {
       const refs = {
@@ -75,4 +87,5 @@
       }
     })();
   </script>
+  
 </section>

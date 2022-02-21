@@ -1,0 +1,40 @@
+<!-- =============================== Modal window ================================= -->
+<div class="header-backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__close-button" type="button" data-modal-close>
+            <svg width=18px height=18px>
+                <use href="./images/svg/icons-header-modal.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <b class="modal__heading">Leave your details, we will call you back</b>
+        <form class="modal__form">
+            <label class="modal__form-item">Name
+                <input type="text" name="user-name" class="modal__form-item-input" required>
+                <svg class="modal__form-item-icon" width=18px height=18px>
+                    <use href="./images/svg/icons-header-modal.svg#icon-person"></use>
+                </svg>
+            </label>
+            <label class="modal__form-item">Phone
+                <input type="tel" name="user-phone" class="modal__form-item-input" pattern="[0-9]{10}"
+                    title="0961111111" required>
+                <svg class="modal__form-item-icon" width=18px height=18px>
+                    <use href="./images/svg/icons-header-modal.svg#icon-phone"></use>
+                </svg>
+            </label>
+            <label class="modal__form-item">Email
+                <input type="email" name="user-email" class="modal__form-item-input" required>
+                <svg class="modal__form-item-icon" width=18px height=18px>
+                    <use href="./images/svg/icons-header-modal.svg#icon-email"></use>
+                </svg>
+            </label>
+            <label class="modal__form-item">Note
+                <textarea name="user-msg" class="modal__form-item-input modal__form-item-input--msg"
+                    placeholder="Enter your message"></textarea>
+            </label>
+            <input type="checkbox" class="modal__form-checkbox" id="form-chesk" required>
+            <label class="modal__form-cb" for="form-chesk">I agree to the newsletter and accept <a href="#">Agreement conditions</a>
+            </label>
+            <button type="submit" class="modal__form-cb-button">Send message</button>
+        </form>
+    </div>
+</div>
