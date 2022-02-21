@@ -1096,11 +1096,20 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff5f6;
-  background-image: url(../images/desk/sectionbg1-desk-1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section__about {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__about {
+    background-image: url(../images/desk/sectionbg1-desk-1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+  }
 }
 
 .about__label {
@@ -1315,7 +1324,6 @@ a {
   background-size: contain;
   background-position: bottom;
   max-width: 100%;
-  margin-left: 74px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__composition {
