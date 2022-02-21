@@ -6,7 +6,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 (()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),n=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",n),o.addEventListener("click",n),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"wzuc":[function(require,module,exports) {
 
+},{}],"h23I":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open1]"),closeModalBtn:document.querySelector("[data-modal-close1]"),modal:document.querySelector("[data-modal1]")};function o(){e.modal.classList.toggle("backdrop--is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/modal"),require("./js/mobile-menu"),require("./js/slider");
-},{"./sass/main.scss":"clu1","./js/modal":"RSqK","./js/mobile-menu":"sByI","./js/slider":"wzuc"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-OutOfTime/src.3fd61503.js.map
+"use strict";require("./sass/main.scss"),require("./js/modal"),require("./js/mobile-menu"),require("./js/slider"),require("./js/poduct-modal");
+},{"./sass/main.scss":"clu1","./js/modal":"RSqK","./js/mobile-menu":"sByI","./js/slider":"wzuc","./js/poduct-modal":"h23I"}]},{},["Focm"], null)
+//# sourceMappingURL=/project-OutOfTime/src.53d0a1fd.js.map
