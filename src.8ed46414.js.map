@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;AAIA,aAJA,QAAA,oBAIA,QAAA","file":"src.8ed46414.js","sourceRoot":"../src","sourcesContent":["import './sass/main.scss';\n\n// import \"./js\";\n\nimport 'animate.css';\n\n"]}
