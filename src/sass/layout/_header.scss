@@ -98,6 +98,7 @@ a {
   height: 100vh;
   background-color: #e17992;
   right: 0;
+  pointer-events: auto;
   z-index: 6;
   opacity: 1;
   transform: translateX(0);
