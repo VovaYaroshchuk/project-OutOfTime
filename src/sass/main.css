@@ -224,7 +224,7 @@ a {
 .header-menu__container {
   position: fixed;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
   visibility: visible;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
