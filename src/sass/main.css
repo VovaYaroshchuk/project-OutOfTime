@@ -1715,12 +1715,12 @@ a {
 .container-gallery {
   background-color: #fff5f6;
   width: 100%;
-  padding-left: 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container-gallery {
+    padding-left: 15px;
     width: 320px;
   }
 }
