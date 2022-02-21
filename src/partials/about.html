@@ -9,7 +9,7 @@
   <div class="container__about">
     <div class="about__name">
       <label class="about__label">tradition and love</label>
-      <h2 class="about__title">how it’s made?</h2>
+      <h2 class="about__title" id="How">how it’s made?</h2>
     </div>
     <div class="about__main">
       <picture>
@@ -95,20 +95,20 @@
       </div>
     </div>
   </div>
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[about-data-modal-open]'),
+        closeModalBtn: document.querySelector('[about-data-modal-close]'),
+        modal: document.querySelector('[about-data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    })();
+  </script>
 </section>
-<script>
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[about-data-modal-open]'),
-      closeModalBtn: document.querySelector('[about-data-modal-close]'),
-      modal: document.querySelector('[about-data-modal]'),
-    };
-
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-    }
-  })();
-</script>
