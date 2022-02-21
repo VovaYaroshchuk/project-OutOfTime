@@ -1,5 +1,5 @@
 import './sass/main.scss';
-
+import './animate.css';
 
 import "./js/modal";
 import "./js/slider";
@@ -9,12 +9,14 @@ import "./js/poduct-modal";
 import "./js/wow.min";
 import "./js/contacts";
 import "./menu";
+import "./js/header-modal";
 
 
 
 
 
 
-// import 'animate.css';
+
+
 
 
