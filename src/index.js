@@ -15,3 +15,6 @@ import "./menu";
 
 
 
+import 'animate.css';
+
+
