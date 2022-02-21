@@ -93,10 +93,10 @@
         </li>
       </ul>
       <div class="contacts__btn-box">
-        <button class="contacts__btn contacts__btn_top" type="button">Our Locations
+        <button class="contacts__btn contacts__btn_top" type="button" location-open>Our Locations
           <img class="contacts__img contacts__img_top" src="./images/contact_img/contacts_arrow_top.png" alt="стрела">
         </button>
-        <button class="contacts__btn contacts__btn_bottom" type="button">Franchise
+        <button class="contacts__btn contacts__btn_bottom" type="button" franchise-open>Franchise
           <img class="contacts__img contacts__img_bottom" src="./images/contact_img/contacts_arrow_bottom.png"
             alt="стрела">
         </button>
@@ -104,4 +104,51 @@
 
     </div>
   </div>
+  <div class="backdrop is-hidden" location>
+    <div class="location location_size">
+      <button class="location__btn" location-close>
+        <img class="location__close" src="./images/contact_img/contacts_arrow_top.png" alt="стрела">
+      </button>
+      <img class="location__img" src="./images/contact_img/location.jpg" alt="земля">
+    </div>
+  </div>
+  <div class="backdrop is-hidden" franchise>
+    <div class="franchise franchise_size">
+      <button class="franchise__btn" franchise-close>
+        <img class="franchise__close" src="./images/contact_img/contacts_arrow_bottom.png" alt="стрела">
+      </button>
+      <div class="franchise__box_top">
+        <h3 class="franchise__title">Franchise</h3>
+        <p class="franchise__pre-title">How to become a team member?</p>
+      </div>
+      <div class="franchise__box_bottom">
+        <p class="franchise__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatum, magnam. Assumenda velit repudiandae totam, a dolorum pariatur eum iusto
+          tempore Lorem, ipsum dolor. Lorem ipsum dolor sit.
+          ducimus rem molestiae. Libero dolores nostrum excepturi mollitia id odio?
+        </p>
+        <p class="franchise__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatum, magnam. Assumenda velit repudiandae totam, a dolorum pariatur eum iusto
+          tempore Lorem, ipsum dolor. Lorem ipsum dolor sit.
+          ducimus rem molestiae. Libero dolores nostrum excepturi mollitia id odio?
+        </p>
+      </div>
+      <form class="franchise__form franchise-form">
+        <div class="franchise-form__wrap">
+          <div class="franchise-form__box">
+            <label class="franchise-form__name" for="user-name">Name</label>
+            <input class="franchise-form__input" type="text" name="user-name" id="user-name" required minlength="2">
+          </div>
+          <div class="franchise-form__box">
+            <label class="franchise-form__name" for="user-phone">Phone</label>
+            <input class="franchise-form__input" type="tel" name="user-phone" id="user-phone" required>
+          </div>
+          <div class="franchise-form__btn-box">
+            <button class="franchise-form__btn" type="submit">Call you back !!!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./js/contacts.js"></script>
 </section>
