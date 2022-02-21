@@ -2,5 +2,5 @@ import './sass/main.scss';
 
 // import "./js";
 
-// import 'animate.css';
+import 'animate.css';
 
