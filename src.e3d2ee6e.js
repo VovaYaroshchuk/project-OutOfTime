@@ -13,4 +13,4 @@ $(".slider").slick({dots:!0,infinite:!0,speed:1e3,fade:!0,cssEase:"linear",slide
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./menu"),require("./js/slider"),require("./js/modal"),require("./js/mobile-menu"),require("animate.css");
 },{"./sass/main.scss":"clu1","./menu":"Z6FK","./js/slider":"wzuc","./js/modal":"RSqK","./js/mobile-menu":"sByI","animate.css":"TOx8"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-OutOfTime/src.e05b222c.js.map
+//# sourceMappingURL=/project-OutOfTime/src.e3d2ee6e.js.map
