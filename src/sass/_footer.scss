@@ -1,4 +1,4 @@
-.container {
+.footer-container {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -72,31 +72,25 @@
 }
 
 @include tab {
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-
-  .footer__container {
+  .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     margin-bottom: 90px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
 @include desk {
-  .container {
+  .footer-container {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
     padding-left: 115px;
     padding-right: 115px;
-  }
-
-  .footer__container {
-    margin-bottom: 100px;
   }
 }
 

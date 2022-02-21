@@ -1,9 +1,6 @@
 .container__about {
   width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #fff5f6;
+  margin: auto auto;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -13,16 +10,19 @@
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    background-image: url(../images/desk/sectionbg1-desk-1x.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-    max-width: 100%;
   }
 }
 
 .section__about {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff5f6;
+  background-image: url(../images/desk/sectionbg1-desk-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 100%;
 }
 
 .about__label {
@@ -126,7 +126,6 @@
     line-height: 176%;
     letter-spacing: 0.04em;
     color: #000000;
-    margin-left: 74px;
     width: 463px;
     height: 79px;
   }
@@ -153,7 +152,6 @@
     line-height: 194%;
     letter-spacing: 0.04em;
     color: #907e82;
-    margin-left: 74px;
     margin-top: 35px;
     margin-bottom: 45px;
     width: 463px;
@@ -245,6 +243,7 @@
   background-size: contain;
   background-position: bottom;
   max-width: 100%;
+  margin-left: 74px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/tel/sectionbg-tel-2x.png);
   }
@@ -358,11 +357,11 @@
   color: #ffa5ba;
   font-family: 'Titan One';
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.13;
   text-align: left;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 15px 15px 20px 15px;
   @media screen and(min-width:768px) {
     font-size: 18px;
     line-height: 1.16;
