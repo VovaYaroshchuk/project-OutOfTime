@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice Cream</title>
     <head>
-      <link rel="shortcut icon" href="./images/tel/product1-tel-1x.png" type="image/png">
+      <link rel="shortcut icon" href="./images/tel/product1-tel-1x.png" type="image/png" />
     </head>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link
@@ -27,28 +27,26 @@
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
-   <include src="./partials/about.html"></include> 
+    <include src="./partials/about.html"></include>
 
-    
     <include src="./partials/gallery.html"></include>
     <include src="./partials/customer__reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-   
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
     <script src="./index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          loop: true,
-        });
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true,
+      });
     </script>
   </body>
 </html>
