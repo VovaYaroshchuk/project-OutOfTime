@@ -1292,8 +1292,6 @@ a {
 .container__about {
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   background-color: #fff5f6;
 }
 
@@ -1311,12 +1309,11 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container__about {
-    width: 1200px;
     background-image: url(../images/desk/sectionbg1-desk-1x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    max-width: 100%;
+    width: 100vw;
   }
 }
 
@@ -1672,11 +1669,11 @@ a {
   color: #ffa5ba;
   font-family: 'Titan One';
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.13;
   text-align: left;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 15px 15px 20px 15px;
 }
 
 @media screen and (min-width: 768px) {
