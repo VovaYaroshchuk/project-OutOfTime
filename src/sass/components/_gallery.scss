@@ -1,22 +1,22 @@
-// <meta name="viewport" content="width=device-width, initial-scale=1.0">
 .container-gallery {
   background-color: #fff5f6;
   width: 100%;
-  // padding-left: 15px;
+
   // padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: 320px) {
-    width: 480px;
+  @media screen and (min-width: 480px) {
+    padding-left: 15px;
+    width: 320px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 1200px;
   }
 }
 .gallery {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 480px) {
     margin-left: 20px;
     margin-right: 200px;
     margin-bottom: 59px;
@@ -41,7 +41,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 36px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 40px;
   }
 }
@@ -55,7 +55,7 @@
     margin-left: 60px;
     flex-basis: calc(100% / 3 - 60px);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 60px;
 
     flex-basis: calc(100% / 3 - 60px);
@@ -79,7 +79,7 @@
     line-height: 1.16;
     letter-spacing: 0.04em;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
   }
@@ -97,8 +97,20 @@
     font-size: 14px;
     line-height: 1.74;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
+  }
+}
+
+.gallery-banner {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 125px;
   }
 }

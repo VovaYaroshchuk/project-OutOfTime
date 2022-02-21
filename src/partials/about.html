@@ -1,51 +1,32 @@
 <section class="section__about">
   <div class="container__about">
     <div class="about__name">
-      <label class="about__label">tradition and love</label>
-      <h2 class="about__title">how it’s made?</h2>
+      <label class="about__label animate__animated animate__bounce animate__slow">tradition and love</label>
+      <h2 class="about__title animate__animated animate__bounce animate__slow" id="How">
+        how it’s made?
+      </h2>
     </div>
     <div class="about__main">
       <picture>
-        <source
-          srcset="
+        <source srcset="
             ./images/desk/how-its-made-desk-1x.png 1x,
             ./images/desk/how-its-made-desk-2x.png 2x
-          "
-          media="(min-width:1200px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/tab/how-its-made-tab-1x.png 1x,
-            ./images/tab/how-its-made-tab-2x.png 2x
-          "
-          media="(min-width:768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/tel/how-its-made-tel-1x.png 1x,
-            ./images/tel/how-its-made-tel-2x.png 2x
-          "
-          media="(min-width:480px)"
-          type="image/png"
-        />
-        <img
-          class="about__picture"
-          src="./images/desk/how-its-made-desk-1x.png"
-          alt="корова и кувшин молока "
-          width="516"
-          height="516"
-        />
+          " media="(min-width:1200px)" type="image/png" />
+        <source srcset="./images/tab/how-its-made-tab-1x.png 1x, ./images/tab/how-its-made-tab-2x.png 2x"
+          media="(min-width:768px)" type="image/png" />
+        <source srcset="./images/tel/how-its-made-tel-1x.png 1x, ./images/tel/how-its-made-tel-2x.png 2x"
+          media="(min-width:480px)" type="image/png" />
+        <img class="about__picture" src="./images/desk/how-its-made-desk-1x.png" alt="корова и кувшин молока "
+          width="516" height="516" />
       </picture>
 
       <div class="about__composition">
-        <p class="composition">
+        <p class="composition animate__animated animate__fadeIn animate__slower animate__delay-1.75s">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
 
-        <p class="cooking">
+        <p class="cooking animate__animated animate__fadeIn animate__slower animate__delay-1.75s">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
           maximus. Cras massa nibh, tincidunt.
@@ -54,19 +35,44 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
 
-        <button type="button" class="about__button">
+        <button about-data-modal-open type="button" class="about__button">
           Read more
           <svg width="4.43" height="8" viewBox="0 0 8 10" fill="none">
-            <path
-              d="M1.61633 1L6.04401 5L1.61633 9"
-              stroke="#D41443"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+            <path d="M1.61633 1L6.04401 5L1.61633 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
+        <div class="backdrop is-hidden" about-data-modal>
+          <div class="about__modal">
+            <img class="about__modal--picture" src="./images/desk/organic_about.png" alt="корова  в зеленом круге "
+              width="75" height="75" />
+            <h2 class="about__modal--title">100% organic</h2>
+            <p class="about__modal--text">
+              The cows that produce our 100% pure organic milk are free range, which means they have
+              acres of lush green fields to call home. Our organic milk complies fully with
+              controlled organic standard. And our system of farming encourages wildlife by avoiding
+              use of any manufactured chemical sprays and no artificial fertilisers or herbicides.
+            </p>
+            <button about-data-modal-close class="about__modal--close" type="button">close</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[about-data-modal-open]'),
+        closeModalBtn: document.querySelector('[about-data-modal-close]'),
+        modal: document.querySelector('[about-data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    })();
+  </script>
 </section>

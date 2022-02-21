@@ -3,6 +3,18 @@ a {
   margin: 0;
   padding: 0;
 }
+.header-container {
+  padding: 0 15px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 115px 0 46px;
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
 .header-menu__link,
 .header-navbar__link {
   font-weight: bold;
@@ -15,11 +27,146 @@ a {
   }
 }
 
+.header {
+  display: flex;
+  position: relative;
+  background-color: #ffb8ca;
+  justify-content: space-between;
+}
+
+.header-navbar-container {
+  padding: 6px 0 0 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 37px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-navbar,
+  .header-navbar__boxes {
+    display: flex;
+  }
+  .header-navbar__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .header-navbar__boxes {
+    padding: 0 110px;
+    margin: auto;
+  }
+}
+
+.header-menu__item {
+  padding: 11px 0 13px 21px;
+  border-top: 1px solid #e18298;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-navbar__buy-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .header-navbar__boxes {
+    display: none;
+  }
+}
+
+// Модальное меню
+.header-menu__container {
+  position: fixed;
+  // display: none;
+  opacity: 0;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu__container.is-open {
+  display: block;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: #e17992;
+  right: 0;
+  z-index: 6;
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Кнопка "Бургер"
+.header-menu__icon-cross {
+  fill: #ffffff;
+}
+.header-menu__burger-batton {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+  z-index: 7;
+  @media screen and (min-width: 768px) {
+    top: 52px;
+    right: 224px;
+  }
+}
+.header-menu__burger-batton.is-open {
+  @media screen and (min-width: 768px) {
+    top: 25px;
+    right: 21px;
+    position: fixed;
+  }
+}
+
+.header-menu__burger-batton .header-menu__battons .header-menu__icon-cross {
+  display: none;
+}
+.header-menu__burger-batton.is-open .header-menu__battons .header-menu__icon-cross {
+  display: block;
+}
+.header-menu__burger-batton.is-open .header-menu__icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-menu__battons {
+    display: none;
+  }
+  .header-menu__container.is-open {
+    display: none;
+  }
+}
+
+// кнопка "Купить"
+.header-menu__buy-button-arrow,
+.header-navbar__buy-button-arrow {
+  display: inline-block;
+}
+.header-navbar__buy-button-arrow {
+  margin-left: 12px;
+}
+.header-menu__buy-button-arrow {
+  margin-left: 16px;
+  @media screen and (min-width: 768px) {
+    margin-left: 14px;
+  }
+}
+
 .header-menu__buy-button {
   width: 209px;
   height: 44px;
   left: 21px;
   top: 60px;
+  margin: 60px 0 32px 21px;
   background: #ffffff;
   border-radius: 22px;
   border: 0;
@@ -37,6 +184,7 @@ a {
   }
   @media screen and (min-width: 768px) {
     width: 186px;
+    margin: 60px 0 32px 34px;
   }
 }
 .header-navbar__buy-button {
@@ -58,109 +206,3 @@ a {
     background: #ecebeb;
   }
 }
-
-.header {
-  display: flex;
-  position: relative;
-  background-color: #ffb8ca;
-  justify-content: space-between;
-}
-
-.header-navbar-container {
-  padding: 6px 0 0 0;
-
-  @media screen and (min-width: 768px) {
-    padding: 37px 26px 0 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-navbar,
-  .header-navbar__boxes {
-    display: flex;
-  }
-  .header-navbar__item:not(:last-child) {
-    margin-right: 35px;
-  }
-  //   .header-navbar {
-  //     margin: 0 26px;
-  //   }
-  .header-navbar__boxes {
-    padding: 0 110px;
-    margin: auto;
-  }
-}
-
-.header-menu__buy-button {
-  margin: 60px 0 32px 21px;
-}
-
-.header-menu__item {
-  padding: 11px 0 13px 21px;
-  border-top: 1px solid #e18298;
-  &:last-child {
-    border-bottom: 1px solid #e18298;
-  }
-}
-.header-menu__burger-batton {
-  position: absolute;
-  top: 25px;
-  right: 21px;
-  z-index: 4;
-  @media screen and (min-width: 768px) {
-    top: 52px;
-    right: 224px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header-navbar__buy-button {
-    display: none;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .header-navbar__boxes {
-    display: none;
-  }
-}
-
-// Модальное меню
-.header-menu__container {
-  display: none;
-}
-
-.header-menu__container.is-open {
-  display: block;
-  position: absolute;
-  width: 250px;
-  height: 100vh;
-  background-color: #e17992;
-  right: 0;
-}
-
-// Кнопка бургер
-.header-menu__icon-cross {
-  fill: #ffffff;
-}
-.header-menu__battons .header-menu__icon-cross {
-  display: none;
-}
-.header-menu__battons.is-open .header-menu__icon-cross {
-  display: block;
-}
-.header-menu__battons.is-open .header-menu__icon-menu {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .header-menu__battons {
-    display: none;
-  }
-}
-
-// надо подкоючить этот скрипт над уже существующим в файле index.html
-
-// <script src="./menu.js"></script>
