@@ -1,6 +1,15 @@
 import './sass/main.scss';
 
-// import "./js";
 
-// import 'animate.css';
+import "./js/modal";
+import "./js/mobile-menu";
+import "./js/slider";
+import "./js/modal";
+import "./js/mobile-menu";
+import "./js/poduct-modal";
+
+
+
+
+
 

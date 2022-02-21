@@ -1,28 +1,67 @@
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.product-section {
+  padding-top: 127px;
+}
+
+.poduct-container {
   @include tab {
     padding-left: 34px;
     padding-right: 34px;
   }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-section-title {
-  @include mobile__title--h3;
+  font-family: $font-family-title;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
   display: block;
+  @include tab {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include desk {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .product-subtitle {
-  @include mobile__title--h2;
+  font-family: $font-family-title;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
   margin-bottom: 144px;
   @include tab {
     margin-bottom: 150px;
+    font-size: 48px;
+    line-height: 1.14;
   }
   @include desk {
     margin-bottom: 259px;
+    font-size: 58px;
+    line-height: 1.13;
   }
 }
 
@@ -267,4 +306,141 @@
 .product__btn {
   border: none;
   background-color: transparent;
+}
+
+.backdrop {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(224, 117, 117, 0.2);
+  visibility: visible;
+  opacity: 1;
+  transition: visibility, opacity, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.product-modal {
+  position: absolute;
+  width: 249px;
+  height: 252px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include tab {
+    width: 220px;
+    height: 226px;
+    background-size: contain;
+  }
+  @include desk {
+    width: 335px;
+    height: 335px;
+    background-size: contain;
+  }
+  background-image: url('../images/tel/product1-tel-1x.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/tel/product1-tel-2x.png');
+  }
+  @media screen and (min-width: 481px) {
+    background-image: url('../images/tab/product1-tab-1x.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/tab/product1-tab-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url('../images/desk/product1-desk-1x.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desk/product1-desk-2x.png');
+    }
+  }
+  @media screen and (min-width: 320px) {
+    width: 250px;
+    height: 350px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 350px;
+    height: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 450px;
+    min-height: 450px;
+  }
+
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  border-radius: 24px;
+  background-color: $subtitle-color;
+  padding: 20px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-modal__title {
+  font-family: $font-family-title;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  padding: 15px 10px 30px;
+
+  color: $brand-color;
+  @media screen and (min-width: 480px) {
+    font-size: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 15px 5px 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 31px;
+    padding: 15px 20px 30px;
+  }
+}
+
+.product-modal__text {
+  font-family: $font-family-text;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
+
+.product-modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: #d41443;
+  }
 }

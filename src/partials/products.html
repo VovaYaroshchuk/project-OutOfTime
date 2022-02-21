@@ -1,6 +1,6 @@
-<section class="section">
-  <div class="container">
-    <label class="product-section-title" for="product-subtitle">100% natural</label>
+<section class="product-section">
+  <div class="poduct-container">
+    <label class="product-section-title" for="product-subtitle" id="Products">100% natural</label>
     <h2 id="product-subtitle" class="product-subtitle">products</h2>
     <ul class="product__list">
       <li class="product__item product-card1">
@@ -9,7 +9,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="product__btn">
+        <button data-modal-open1 type="button" class="product__btn">
           <img src="./images/png/arrow-right.png" alt="button" />
         </button>
       </li>
@@ -34,5 +34,20 @@
         </button>
       </li>
     </ul>
+  </div>
+
+  <div class="backdrop backdrop--is-hidden" data-modal1>
+
+
+
+    <div class="product-modal">
+      <button data-modal-close1 type="button" class="product-modal__btn-close">&times;</button>
+      <h2 class="product-modal__title">the best product</h2>
+      <p class="product-modal__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque perspiciatis
+        molestias ex porro in distinctio, sint aliquid iusto? Quos velit quis earum reprehenderit id
+        iure, nihil voluptatem? Maxime, quia?
+      </p>
+    </div>
   </div>
 </section>
