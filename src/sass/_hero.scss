@@ -288,6 +288,9 @@ display: none;
 }
 
 .hero__title-h2 {
+    @media screen and (max-width: 767px) {
+display: none;
+  }
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
