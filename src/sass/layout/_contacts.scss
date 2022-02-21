@@ -1,40 +1,31 @@
 .contacts {
-  &__wrap {
-    background: #fff5f6;
-    @include desk {
-      background-image: url('../images/contact_img/contact-bg.png');
-      min-width: 1200px;
-      max-width: 1600px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin: 0 auto;
-      width: 100%;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/contact_img/contact-bg_x2.png');
-      }
+  background: #fff5f6;
+  @include desk {
+    background-image: url('../images/contact_img/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contact_img/contact-bg_x2.png');
     }
+  }
+  &__wrap {
     @media screen and (max-width: 767px) {
       position: relative;
     }
   }
   &__shift {
-    padding: 0 35px;
     @media screen and (max-width: 767px) {
       position: absolute;
       top: -84px;
-    }
-    @include tab {
-      padding: 0 16px;
-    }
-    @include desk {
-      padding: 0;
     }
   }
   &__list {
     @include tab {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
   &__item {
@@ -46,13 +37,13 @@
     background-color: white;
     @include tab {
       margin-top: -78px;
-      width: 220px;
+      flex-basis: calc((768px - (36px * 2) - (20px * 2)) / 3);
       padding: 50px 31px;
     }
     @include desk {
       margin-top: -102px;
       padding: 51px 43px 62px 43px;
-      width: 330px;
+      flex-basis: calc((1280px - (115px * 2) - (30px * 2)) / 3);
     }
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -261,5 +252,58 @@
   &__contact {
     line-height: 1.5;
     color: #907e82;
+  }
+}
+.location {
+  background: #fff5f6;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 5px solid #d41342;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition-property: transform babackground;
+  transition-duration: 500ms;
+  transition-delay: 250ms;
+  &_size {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      min-width: 320px;
+      max-width: 480px;
+    }
+    @include tab {
+      width: 700px;
+    }
+    @include desk {
+      width: 1000px;
+    }
+  }
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -250%) scale(0.3) rotate(90deg);
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d41342;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close {
+    width: 10px;
+  }
+  &__img {
+    object-fit: cover;
   }
 }
