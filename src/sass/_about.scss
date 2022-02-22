@@ -1,15 +1,17 @@
 .container__about {
   width: 100%;
-  margin: auto auto;
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    margin: 0;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    margin: auto auto;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    margin: auto auto;
   }
 }
 
@@ -98,9 +100,15 @@
 }
 
 .about__main {
+  padding-bottom: 34px;
+
   @media screen and(min-width:768px) {
     display: flex;
     align-items: center;
+    padding-bottom: 66px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 146px;
   }
 }
 
