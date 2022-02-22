@@ -1073,21 +1073,23 @@ a {
 
 .container__about {
   width: 100%;
-  margin: auto auto;
 }
 @media screen and (min-width: 480px) {
   .container__about {
     width: 480px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .container__about {
     width: 768px;
+    margin: auto auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__about {
     width: 1200px;
+    margin: auto auto;
   }
 }
 
@@ -1185,10 +1187,19 @@ a {
   }
 }
 
+.about__main {
+  padding-bottom: 34px;
+}
 @media screen and (min-width: 768px) {
   .about__main {
     display: flex;
     align-items: center;
+    padding-bottom: 66px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__main {
+    padding-bottom: 146px;
   }
 }
 
