@@ -15,13 +15,13 @@
   <div class="container__about">
     <div class="about__name">
       <label
-        class="about__label wow animate__animated animate__bounce"
+        class="about__label wow animated animate__bounce"
         data-wow-duration="1.4s"
         data-wow-offset="10"
         >tradition and love</label
       >
       <h2
-        class="about__title wow animate__animated animate__bounce"
+        class="about__title wow animated animate__bounce"
         data-wow-duration="1.4s"
         data-wow-offset="10"
         id="How"
@@ -40,12 +40,12 @@
           type="image/png"
         />
         <source
-          srcset="../images/tab/how-its-made-tab-1x.png 1x, ./images/tab/how-its-made-tab-2x.png 2x"
+          srcset="./images/tab/how-its-made-tab-1x.png 1x, ./images/tab/how-its-made-tab-2x.png 2x"
           media="(min-width:768px)"
           type="image/png"
         />
         <source
-          srcset="./images/tel/how-its-made-tel-1x.png 1x, ./images/tel/how-its-made-tel-2x.png 2x"
+          srcset="../images/tel/how-its-made-tel-1x.png 1x, ./images/tel/how-its-made-tel-2x.png 2x"
           media="(min-width:480px)"
           type="image/png"
         />
@@ -60,7 +60,7 @@
 
       <div class="about__composition">
         <p
-          class="composition wow animate__animated animate__fadeIn"
+          class="composition wow animated animate__fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay="0.75s"
           data-wow-offset="30"
@@ -70,7 +70,7 @@
         </p>
 
         <p
-          class="cooking wow animate__animated animate__fadeIn"
+          class="cooking wow animated animate__fadeIn"
           data-wow-duration="1.5s"
           data-wow-delay="0.75s"
           data-wow-offset="35"
@@ -119,8 +119,16 @@
   </div>
   <script src="../js/wow.min.js"></script>
   <script>
-    new WOW().init();
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+    });
+    wow.init();
   </script>
+  <script src="../js/about-modal.js"></script>
   <script>
     (() => {
       const refs = {

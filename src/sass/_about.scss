@@ -118,6 +118,9 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  @media screen and(min-width:1200px) {
+    margin-top: 55px;
+  }
 }
 
 .composition {
@@ -142,6 +145,7 @@
     color: #000000;
     width: 463px;
     height: 79px;
+    margin: 0 36px 49px 0;
   }
 }
 
@@ -170,6 +174,7 @@
     margin-bottom: 45px;
     width: 463px;
     height: 155px;
+    margin: 49px 36px 62px 0;
   }
 }
 
@@ -262,6 +267,11 @@
   }
   @media screen and(min-width:768px) {
     background-image: none;
+    margin-top: 100px;
+    @media screen and(min-width:1200px) {
+      margin-left: 74px;
+      margin-top: 106px;
+    }
   }
 }
 
