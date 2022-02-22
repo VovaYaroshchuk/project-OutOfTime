@@ -19,7 +19,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="product__btn">
+        <button data-modal-open2 type="button" class="product__btn">
           <img src="./images/png/arrow-right.png" alt="button" />
         </button>
       </li>
@@ -29,7 +29,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="product__btn">
+        <button data-modal-open3 type="button" class="product__btn">
           <img class="product__img" src="./images/png/arrow-right.png" alt="button" />
         </button>
       </li>
@@ -38,7 +38,11 @@
 
   <div class="product-backdrop backdrop--is-hidden" data-modal1>
     <div class="product-modal">
-      <button data-modal-close1 type="button" class="product-modal__btn-close">&times;</button>
+      <button class="product-modal__btn-close" type="button" data-modal-close1>
+        <svg width="18px" height="18px">
+          <use href="./images/svg/icons-header-modal.svg#icon-close-black"></use>
+        </svg>
+      </button>
       <h2 class="product-modal__title">the best product</h2>
       <p class="product-modal__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque perspiciatis
@@ -47,20 +51,34 @@
       </p>
     </div>
   </div>
-  <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[data-modal-open1]'),
-        closeModalBtn: document.querySelector('[data-modal-close1]'),
-        modal: document.querySelector('[data-modal1]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        refs.modal.classList.toggle('backdrop--is-hidden');
-      }
-    })();
-  </script>
+  <div class="product-backdrop2 backdrop--is-hidden" data-modal2>
+    <div class="product-modal2">
+      <button class="product-modal__btn-close" type="button" data-modal-close2>
+        <svg width="18px" height="18px">
+          <use href="./images/svg/icons-header-modal.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <h2 class="product-modal__title">the best product</h2>
+      <p class="product-modal__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque perspiciatis
+        molestias ex porro in distinctio, sint aliquid iusto? Quos velit quis earum reprehenderit id
+        iure, nihil voluptatem? Maxime, quia?
+      </p>
+    </div>
+  </div>
+  <div class="product-backdrop3 backdrop--is-hidden" data-modal3>
+    <div class="product-modal3">
+      <button class="product-modal__btn-close" type="button" data-modal-close3>
+        <svg width="18px" height="18px">
+          <use href="./images/svg/icons-header-modal.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <h2 class="product-modal__title">the best product</h2>
+      <p class="product-modal__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque perspiciatis
+        molestias ex porro in distinctio, sint aliquid iusto? Quos velit quis earum reprehenderit id
+        iure, nihil voluptatem? Maxime, quia?
+      </p>
+    </div>
+  </div>
 </section>
