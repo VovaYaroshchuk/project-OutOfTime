@@ -5,7 +5,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"jTTk":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-hmodal-open]"),closeModalBtn:document.querySelector("[data-hmodal-close]"),modal:document.querySelector("[data-hmodal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})(),(()=>{const e={openModalBtn:document.querySelector("[data-hmodal-open2]"),closeModalBtn:document.querySelector("[data-hmodal-close2]"),modal:document.querySelector("[data-hmodal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"i0CD":[function(require,module,exports) {
-(()=>{const e=document.querySelector("[data-hmenu-button]"),t=document.querySelector("[data-hmenu]");e.addEventListener("click",()=>{const a="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!a),t.classList.toggle("is-open")})})();
+(()=>{const e=document.querySelector("[data-hmenu-button]"),t=document.querySelector("[data-hmodal-open2]"),a=document.querySelector("[data-hmenu]");e.addEventListener("click",()=>{const o="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),t.classList.toggle("is-open"),e.setAttribute("aria-expanded",!o),a.classList.toggle("is-open")})})();
 },{}],"RSqK":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"sByI":[function(require,module,exports) {
@@ -20,4 +20,4 @@ var e;!function(t,n){if("function"==typeof e&&e.amd)e(["module","exports"],n);el
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./animate.css"),require("./js/header-modal"),require("./js/menu"),require("./js/modal"),require("./js/slider"),require("./js/mobile-menu"),require("./js/poduct-modal"),require("./js/wow.min"),require("./js/contacts");
 },{"./sass/main.scss":"clu1","./animate.css":"SKGR","./js/header-modal":"jTTk","./js/menu":"i0CD","./js/modal":"RSqK","./js/slider":"SKGR","./js/mobile-menu":"sByI","./js/poduct-modal":"h23I","./js/wow.min":"qRFq","./js/contacts":"Vz8i"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-OutOfTime/src.d124715c.js.map
+//# sourceMappingURL=/project-OutOfTime/src.f7021899.js.map
