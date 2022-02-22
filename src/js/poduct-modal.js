@@ -1,14 +1,16 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open1]'),
-    closeModalBtn: document.querySelector('[data-modal-close1]'),
-    modal: document.querySelector('[data-modal1]'),
-  };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open1]'),
+        closeModalBtn: document.querySelector('[data-modal-close1]'),
+        modal: document.querySelector('[data-modal1]'),
+      };
 
-  function toggleModal() {
-    refs.modal.classList.toggle('backdrop--is-hidden');
-  }
-})();
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('backdrop--is-hidden');
+      }
+    })();
+ 

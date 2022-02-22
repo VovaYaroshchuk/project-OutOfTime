@@ -20,18 +20,18 @@
   position: relative;
   margin: 0 auto;
   @media screen and (min-width: 320px) {
-     background-position: 70% 0, 80% 0;
+    background-position: 70% 0, 80% 0;
     background-size: auto;
     background-position: 70% 100%, 100% 55%;
   }
 
   @media screen and (min-width: 480px) {
     width: 480px;
-     background-position: 45% 100%, 50% 60%;
-     }
+    background-position: 45% 100%, 50% 60%;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
-      background-image: url(../images/tab/arrow.svg);
+    background-image: url(../images/tab/arrow.svg);
     background-size: 18px, auto;
     background-position: 154px 347px;
     background-repeat: no-repeat;
@@ -40,35 +40,35 @@
     width: 1280px;
     height: 665px;
     padding-left: 0;
-        background-image: url(../images/tab/arrow.svg);
-    background-size: 26px , auto;
+    background-image: url(../images/tab/arrow.svg);
+    background-size: 26px, auto;
     background-position: 295px 583px;
     background-repeat: no-repeat;
   }
 }
 
 .hero__icecream-container-320 {
-      background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
+  background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
+    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
   }
-   @media screen and (min-width: 320px) {
-      height:  502px;
-       background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto, 346px 346px;
+  @media screen and (min-width: 320px) {
+    height: 502px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto, 346px 346px;
     background-position: 70% 0, 80% 0;
     background-size: auto;
     background-position: 70% 100%, 100% 55%;
   }
   @media screen and (min-width: 480px) {
-      display: none;
-      }
+    display: none;
+  }
 }
 
 .hero__icecream-container-480 {
-     @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
@@ -77,10 +77,10 @@
     height: 502px;
     padding-left: 20px;
     background-position: 45% 100%, 50% 60%;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   }
-@media screen and (min-width: 768px) {
-display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -95,18 +95,17 @@ display: none;
       background-image: url(../images/tab/hero-icecream-tab-2x.png),
         url(../images/tel/Ellipse-tel1-2x.png);
     }
- 
+
     height: 399px;
-     background-position: 60% 100%, 67% 50%;
+    background-position: 60% 100%, 67% 50%;
   }
   @media screen and (min-width: 1280px) {
     display: none;
-    
   }
 }
 
 .hero__icecream-container-1280 {
-      @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     background-size: auto, 538px 538px;
     width: 1280px;
     background-position: center;
@@ -129,7 +128,7 @@ display: none;
     position: absolute;
     // top: 193px;
     left: 20px;
-    bottom:160px ;
+    bottom: 160px;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -142,8 +141,8 @@ display: none;
     // top: 171px;
     left: 115px;
     bottom: 293px;
-     height: 200px;
-   }
+    height: 200px;
+  }
 }
 
 .pretitle {
@@ -186,9 +185,9 @@ display: none;
 .hero__figures {
   position: absolute;
   right: 34px;
-//   top: 96px;
-//   z-index: 1;
-bottom: 195px;
+  //   top: 96px;
+  //   z-index: 1;
+  bottom: 195px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -285,22 +284,22 @@ bottom: 195px;
   }
 }
 
-.hero__lorem-container{
-         @media screen and (min-width: 768px) {
-      position: absolute;
+.hero__lorem-container {
+  @media screen and (min-width: 768px) {
+    position: absolute;
     bottom: 59px;
-   left:  154px;
+    left: 154px;
   }
-    @media screen and (min-width: 1280px) {
-      position: absolute;
+  @media screen and (min-width: 1280px) {
+    position: absolute;
     bottom: 102px;
-   left:  295px;
+    left: 295px;
   }
- }
+}
 
 .hero__title-h2 {
-    @media screen and (max-width: 767px) {
-display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
   font-family: DM Sans;
   font-style: normal;
@@ -309,14 +308,14 @@ display: none;
   line-height: 150%;
   color: #ffffff;
   @media screen and (min-width: 767px) {
-      display:inline-block;
-font-size: 8px;
-line-height: 1.5;
+    display: inline-block;
+    font-size: 8px;
+    line-height: 1.5;
     width: 114px;
     height: 48px;
   }
   @media screen and (min-width: 1280px) {
-      display:inline-block;
+    display: inline-block;
     font-size: 14px;
     line-height: 1.42;
     width: 200px;
@@ -343,12 +342,12 @@ line-height: 1.5;
     line-height: 30px;
   }
   @media screen and (min-width: 768px) {
-     font-size: 22px;
+    font-size: 22px;
     line-height: 1.14;
     height: 80px;
   }
   @media screen and (min-width: 1280px) {
-     font-size: 38px;
+    font-size: 38px;
     line-height: 1.16;
     margin-bottom: 22px;
     height: 137px;
@@ -393,23 +392,25 @@ line-height: 1.5;
 }
 
 .hero__container-btn {
-height: 24px;
+  height: 24px;
 }
 .hero__container-products-btn {
   background-color: $brand-color;
   color: #ffffff;
   margin-right: 8px;
-  &:hover, &:focus{
-      background-color: #C7133E;
-      }
-      margin-bottom: 0;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+  margin-bottom: 0;
 }
 
 .hero__container-him-btn {
   background-color: #ffffff;
   color: $brand-color;
-   &:hover, &:focus{
-      background-color: #ECEBEB;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
   margin-bottom: 0;
 }
