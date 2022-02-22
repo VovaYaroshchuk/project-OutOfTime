@@ -788,7 +788,7 @@ a {
   }
 }
 
-.hero__icecream-container-320 {
+/* .hero__icecream-container-320 {
   background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
 }
 
@@ -880,7 +880,7 @@ a {
   .hero__icecream-container-1280 {
     background-image: url(../images/desk/hero-icecream-desk-2x.png), url(../images/desk/Ellipse-des-2x.png);
   }
-}
+} */
 
 .hero_title-container {
   min-width: 218px;
