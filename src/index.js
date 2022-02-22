@@ -1,8 +1,9 @@
 import './sass/main.scss';
 import './animate.css';
 
-import "./js/header-modal";
 import "./js/menu";
+import "./js/header-modal";
+
 
 import "./js/modal";
 import "./js/slider";
