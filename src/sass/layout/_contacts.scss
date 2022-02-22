@@ -15,7 +15,7 @@
       position: relative;
       height: 1377px;
     }
-    @include desk {
+    @media screen and (min-width: 1280px) {
       width: 1280px;
     }
   }
