@@ -186,9 +186,17 @@ a {
   &:focus {
     background: #ecebeb;
   }
+
   @media screen and (min-width: 768px) {
     width: 186px;
     margin: 60px 0 32px 34px;
+  }
+}
+
+.header-navbar__buy-button.is-open {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
   }
 }
 .header-navbar__buy-button {
@@ -197,6 +205,7 @@ a {
   background: #ffffff;
   border-radius: 22px;
   border: 0;
+  z-index: 5;
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
