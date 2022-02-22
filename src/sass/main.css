@@ -1073,23 +1073,22 @@ a {
 
 .container__about {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container__about {
     width: 480px;
-    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .container__about {
     width: 768px;
-    margin: auto auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container__about {
     width: 1200px;
-    margin: auto auto;
   }
 }
 
@@ -1098,6 +1097,16 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff5f6;
+  background-image: url(../images/tel/sectionbg-tel-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  max-width: 100%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section__about {
+    background-image: url(../images/tel/sectionbg-tel-2x.png);
+  }
 }
 @media screen and (min-width: 768px) {
   .section__about {
@@ -1336,18 +1345,6 @@ a {
   }
 }
 
-.about__composition {
-  background-image: url(../images/tel/sectionbg-tel-1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  max-width: 100%;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .about__composition {
-    background-image: url(../images/tel/sectionbg-tel-2x.png);
-  }
-}
 @media screen and (min-width: 768px) {
   .about__composition {
     background-image: none;
