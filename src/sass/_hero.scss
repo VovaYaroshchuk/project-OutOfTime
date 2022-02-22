@@ -31,19 +31,11 @@
   }
   @media screen and (min-width: 768px) {
     width: 768px;
-    // background-image: url(../images/tab/arrow.svg);
-    // background-size: 18px, auto;
-    // background-position: 154px 347px;
-    // background-repeat: no-repeat;
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
     height: 665px;
     padding-left: 0;
-    // background-image: url(../images/tab/arrow.svg);
-    // background-size: 26px, auto;
-    // background-position: 295px 583px;
-    // background-repeat: no-repeat;
   }
 }
 
@@ -54,7 +46,6 @@
     width: 18px;
     height: 18px;
     background-size: 18px;
-    // background-position: 154px 347px;
     background-repeat: no-repeat;
     top: 347px;
     left: 154px;
@@ -63,11 +54,8 @@
   @media screen and (min-width: 1280px) {
       width: 26px;
       height: 26px;
-    // height: 665px;
-    // padding-left: 0;
-    background-image: url(../images/tab/arrow.svg);
+     background-image: url(../images/tab/arrow.svg);
     background-size: 26px;
-    // background-position: 295px 583px;
     background-repeat: no-repeat;
     top: 583px;
     left: 295px;
@@ -81,12 +69,10 @@
   }
   @media screen and (min-width: 320px) {
     height: 502px;
-    // background-size: contain;
-    background-position: center;
+      background-position: center;
     background-repeat: no-repeat;
     background-size: 171px 410px, 285px ;
     background-position: 70% 0, 80% 0;
-    // background-size: auto;
     background-position: 80% 100%, 100% 55%;
   }
   @media screen and (min-width: 480px) {
@@ -102,7 +88,6 @@
     }
     width: 480px;
     height: 502px;
-    // padding-left: 20px;
     background-position: 45% 100%, 50% 60%;
     background-repeat: no-repeat;
     background-size: 171px 410px, 346px 346px;
@@ -136,7 +121,6 @@ background-size: 143px 336px, 324px 322px ;
   @media screen and (min-width: 1280px) {
     background-size: 236px 557px, 538px 538px;
     width: 1280px;
-    // background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/desk/hero-icecream-desk-1x.png),
       url(../images/desk/Ellipse-desk-1x.png);
@@ -154,19 +138,16 @@ background-size: 143px 336px, 324px 322px ;
   min-width: 218px;
   @media screen and (min-width: 320px) {
     position: absolute;
-    // top: 193px;
     left: 20px;
     bottom: 160px;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
-    // top: 102px;
     left: 34px;
     bottom: 173px;
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
-    // top: 171px;
     left: 115px;
     bottom: 293px;
     height: 200px;
@@ -213,8 +194,6 @@ background-size: 143px 336px, 324px 322px ;
 .hero__figures {
   position: absolute;
   right: 34px;
-  //   top: 96px;
-  //   z-index: 1;
   bottom: 195px;
 
   @media screen and (max-width: 767px) {
@@ -222,7 +201,6 @@ background-size: 143px 336px, 324px 322px ;
   }
   @media screen and (min-width: 1280px) {
     right: 97px;
-    // top: 156px;
     height: 165px;
     bottom: 341px;
   }
@@ -264,8 +242,6 @@ background-size: 143px 336px, 324px 322px ;
       background-image: url(../images/tab/hero-girl-tab-2x.png);
     }
     background-repeat: no-repeat;
-    // width: 168px;
-    // height: 133px;
     position: absolute;
     background-size: 168px 133px;
     z-index: 5;
@@ -278,8 +254,6 @@ background-size: 143px 336px, 324px 322px ;
       background-image: url(../images/desk/hero-girl-desk-2x.png);
     }
     background-repeat: no-repeat;
-    // width: 293px;
-    // height: 232px;
     position: absolute;
     background-size: 293px 232px;
     bottom: 0;
@@ -294,8 +268,6 @@ background-size: 143px 336px, 324px 322px ;
       background-image: url(../images/tab/hero-milk-tab-2x.png);
     }
     background-repeat: no-repeat;
-    // width: 168px;
-    // height: 133px;
     position: absolute;
     background-size: 124px 126px;
     bottom: 18px;
@@ -440,6 +412,7 @@ background-size: 143px 336px, 324px 322px ;
 .hero__container-him-btn {
   background-color: #ffffff;
   color: $brand-color;
+  transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
