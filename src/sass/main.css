@@ -2887,6 +2887,20 @@ a {
   z-index: -1;
 }
 
+@media screen and (min-width: 772px) and (max-width: 1279px) {
+  .slider__span--second {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider__span--first {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
 .slider__title {
   margin-right: auto;
   margin-left: auto;
@@ -2974,6 +2988,13 @@ a {
 
 .contacts {
   background: #fff5f6;
+  padding-bottom: 113px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-bottom: 165px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
