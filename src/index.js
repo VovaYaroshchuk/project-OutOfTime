@@ -8,8 +8,8 @@ import "./js/mobile-menu";
 import "./js/poduct-modal";
 import "./js/wow.min";
 import "./js/contacts";
-import "./menu";
 import "./js/header-modal";
+import "./js/menu";
 
 
 
