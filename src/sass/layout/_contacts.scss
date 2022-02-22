@@ -15,6 +15,9 @@
       position: relative;
       height: 1377px;
     }
+    @include desk {
+      width: 1280px;
+    }
   }
   &__shift {
     @media screen and (max-width: 767px) {
@@ -384,6 +387,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 5px solid #d41342;
     padding: 25px;
     border-radius: 20px;
