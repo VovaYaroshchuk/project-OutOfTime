@@ -47,81 +47,81 @@
   }
 }
 
-// .hero__icecream-container-320 {
-//   background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
-//   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//     background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
-//   }
-//   @media screen and (min-width: 320px) {
-//     height: 502px;
-//     width: 500px;
-//     background-size: contain;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: auto, 346px 346px;
-//     background-position: 70% 0, 80% 0;
-//     background-size: auto;
-//     background-position: 70% 100%, 100% 55%;
-//   }
-//   @media screen and (min-width: 480px) {
-//     display: none;
-//   }
-// }
+.hero__icecream-container-320 {
+  background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
+  }
+  @media screen and (min-width: 320px) {
+    height: 502px;
+    width: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto, 346px 346px;
+    background-position: 70% 0, 80% 0;
+    background-size: auto;
+    background-position: 70% 100%, 100% 55%;
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
 
-// .hero__icecream-container-480 {
-//   @media screen and (min-width: 480px) {
-//     background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
-//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//       background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
-//     }
-//     width: 480px;
-//     height: 502px;
-//     padding-left: 20px;
-//     background-position: 45% 100%, 50% 60%;
-//     background-repeat: no-repeat;
-//   }
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
+.hero__icecream-container-480 {
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
+    }
+    width: 480px;
+    height: 502px;
+    padding-left: 20px;
+    background-position: 45% 100%, 50% 60%;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
-// .hero__icecream-container-768 {
-//   @media screen and (min-width: 768px) {
-//     background-size: auto, auto;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-image: url(../images/tab/hero-icecream-tab-1x.png),
-//       url(../images/tel/Ellipse-tel1-1x.png);
-//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//       background-image: url(../images/tab/hero-icecream-tab-2x.png),
-//         url(../images/tel/Ellipse-tel1-2x.png);
-//     }
+.hero__icecream-container-768 {
+  @media screen and (min-width: 768px) {
+    background-size: auto, auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/tab/hero-icecream-tab-1x.png),
+      url(../images/tel/Ellipse-tel1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/tab/hero-icecream-tab-2x.png),
+        url(../images/tel/Ellipse-tel1-2x.png);
+    }
 
-//     height: 399px;
-//     background-position: 60% 100%, 67% 50%;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     display: none;
-//   }
-// }
+    height: 399px;
+    background-position: 60% 100%, 67% 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
 
-// .hero__icecream-container-1280 {
-//   @media screen and (min-width: 1280px) {
-//     background-size: auto, 538px 538px;
-//     width: 1280px;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-image: url(../images/desk/hero-icecream-desk-1x.png),
-//       url(../images/desk/Ellipse-desk-1x.png);
-//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//       background-image: url(../images/desk/hero-icecream-desk-2x.png),
-//         url(../images/desk/Ellipse-des-2x.png);
-//     }
-//     height: 665px;
-//     padding-left: 0;
-//     background-position: 60% 100%, 67% 40%;
-//   }
-// }
+.hero__icecream-container-1280 {
+  @media screen and (min-width: 1280px) {
+    background-size: auto, 538px 538px;
+    width: 1280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/desk/hero-icecream-desk-1x.png),
+      url(../images/desk/Ellipse-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desk/hero-icecream-desk-2x.png),
+        url(../images/desk/Ellipse-des-2x.png);
+    }
+    height: 665px;
+    padding-left: 0;
+    background-position: 60% 100%, 67% 40%;
+  }
+}
 
 .hero_title-container {
   min-width: 218px;
