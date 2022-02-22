@@ -2028,6 +2028,12 @@ a {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .about__picture {
+    margin-top: 55px;
+  }
+}
+
 .composition {
   font-family: 'DM Sans';
   font-style: normal;
@@ -2056,6 +2062,7 @@ a {
     color: #000000;
     width: 463px;
     height: 79px;
+    margin: 0 36px 49px 0;
   }
 }
 
@@ -2090,6 +2097,7 @@ a {
     margin-bottom: 45px;
     width: 463px;
     height: 155px;
+    margin: 49px 36px 62px 0;
   }
 }
 
@@ -2174,6 +2182,14 @@ a {
 @media screen and (min-width: 768px) {
   .about__composition {
     background-image: none;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .about__composition {
+    margin-left: 74px;
+    margin-top: 106px;
   }
 }
 

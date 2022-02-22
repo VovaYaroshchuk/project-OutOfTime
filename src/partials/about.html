@@ -2,17 +2,16 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<link rel="stylesheet" href="./animate.css" />
+<link rel="stylesheet" href="./js/about-modal.js" />
 
 <link rel="stylesheet" href="./sass/main.css" />
 
-<section class="section__about" id="About">
+<section class="section__about">
   <div class="container__about">
     <div class="about__name">
-      <label class="about__label wow animate__animated animate__bounce" data-wow-duration="1.4s"
-        data-wow-offset="10">tradition and love</label>
-      <h2 class="about__title wow animate__animated animate__bounce" data-wow-duration="1.4s" data-wow-offset="10"
-        id="How">
+      <label class="about__label wow animated animate__bounce" data-wow-duration="1.4s" data-wow-offset="10">tradition
+        and love</label>
+      <h2 class="about__title wow animated animate__bounce" data-wow-duration="1.4s" data-wow-offset="10" id="How">
         how it’s made?
       </h2>
     </div>
@@ -31,13 +30,13 @@
       </picture>
 
       <div class="about__composition">
-        <p class="composition wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s"
+        <p class="composition wow animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s"
           data-wow-offset="30">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
 
-        <p class="cooking wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s"
+        <p class="cooking wow animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.75s"
           data-wow-offset="35">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
@@ -47,14 +46,14 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
 
-        <button about-data-modal-open type="button" class="about__button">
+        <button about-modal-open type="button" class="about__button">
           Read more
           <svg width="4.43" height="8" viewBox="0 0 8 10" fill="none">
             <path d="M1.61633 1L6.04401 5L1.61633 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
         </button>
-        <div class="backdrop is-hidden" about-data-modal>
+        <div about-modal class="backdrop is-hidden">
           <div class="about__modal">
             <img class="about__modal--picture" src="./images/desk/organic_about.png" alt="корова  в зеленом круге "
               width="75" height="75" />
@@ -65,7 +64,7 @@
               controlled organic standard. And our system of farming encourages wildlife by avoiding
               use of any manufactured chemical sprays and no artificial fertilisers or herbicides.
             </p>
-            <button about-data-modal-close class="about__modal--close" type="button">close</button>
+            <button about-modal-close class="about__modal--close" type="button">close</button>
           </div>
         </div>
       </div>
@@ -73,9 +72,17 @@
   </div>
   <script src="./js/wow.min.js"></script>
   <script>
-    new WOW().init();
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+    });
+    wow.init();
   </script>
-  <script>
+  <script src="./js/about-modal.js"></script>
+  <!-- <script>
     (() => {
       const refs = {
         openModalBtn: document.querySelector('[about-data-modal-open]'),
@@ -90,5 +97,5 @@
         refs.modal.classList.toggle('is-hidden');
       }
     })();
-  </script>
+  </script> -->
 </section>
