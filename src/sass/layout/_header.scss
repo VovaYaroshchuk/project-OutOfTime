@@ -124,10 +124,10 @@ a {
   }
 }
 .header-menu__burger-batton.is-open {
+  position: fixed;
   @media screen and (min-width: 768px) {
     top: 25px;
     right: 21px;
-    position: fixed;
   }
 }
 
