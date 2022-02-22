@@ -1,5 +1,9 @@
 .contacts {
   background: #fff5f6;
+  padding-bottom: 113px;
+  @include tab {
+    padding-bottom: 165px;
+  }
   @include desk {
     background-image: url('../images/contact_img/contact-bg.png');
     background-repeat: no-repeat;
