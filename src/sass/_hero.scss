@@ -71,6 +71,7 @@
     height: 502px;
     background-repeat: no-repeat;
     background-size: 171px 410px, 285px ;
+    // background-position: 70% 0, 80% 0;
     background-position: 80% 100%, 100% 55%;
   }
   @media screen and (min-width: 480px) {
@@ -80,9 +81,9 @@
 
 .hero__icecream-container-480 {
   @media screen and (min-width: 480px) {
-    background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel-1x.png);
+    background-image: url(../images/tel/hero-tel-1x.png), url(../images/tel/Ellipse-tel1-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel-2x.png);
+      background-image: url(../images/tel/hero-tel-2x.png), url(../images/tel/Ellipse-tel1-2x.png);
     }
     width: 480px;
     height: 502px;
