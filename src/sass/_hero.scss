@@ -39,10 +39,10 @@
   }
 }
 
-.hero__container-arrow{
-    position: absolute;
-    cursor: pointer;
-    z-index: 1;
+.hero__container-arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
   @media screen and (min-width: 768px) {
     background-image: url(../images/tab/arrow.svg);
     width: 18px;
@@ -51,17 +51,16 @@
     background-repeat: no-repeat;
     top: 347px;
     left: 154px;
-
   }
   @media screen and (min-width: 1280px) {
-      width: 26px;
-      height: 26px;
-     background-image: url(../images/tab/arrow.svg);
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/tab/arrow.svg);
     background-size: 26px;
     background-repeat: no-repeat;
     top: 583px;
     left: 295px;
-  }  
+  }
 }
 
 .hero__icecream-container-320 {
@@ -72,7 +71,7 @@
   @media screen and (min-width: 320px) {
     height: 502px;
     background-repeat: no-repeat;
-    background-size: 171px 410px, 285px ;
+    background-size: 171px 410px, 285px;
     // background-position: 70% 0, 80% 0;
     background-position: 80% 100%, 100% 55%;
   }
@@ -109,7 +108,7 @@
       background-image: url(../images/tab/hero-icecream-tab-2x.png),
         url(../images/tel/Ellipse-tel1-2x.png);
     }
-background-size: 143px 336px, 324px 322px ;
+    background-size: 143px 336px, 324px 322px;
     height: 399px;
     background-position: 60% 100%, 67% 50%;
   }
@@ -419,4 +418,11 @@ background-size: 143px 336px, 324px 322px ;
     background-color: #ecebeb;
   }
   margin-bottom: 0;
+}
+
+.hero__container-btn--link-how {
+  color: #d41443;
+}
+.hero__container-btn--link-prod {
+  color: #ffffff;
 }
