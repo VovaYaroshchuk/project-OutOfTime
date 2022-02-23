@@ -1,10 +1,11 @@
 .slider__section {
-  margin-bottom: 225px;
+  margin-bottom: 171px;
+
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-bottom: 205px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 171px;
+    margin-bottom: 225px;
   }
 }
 .slider__container {
