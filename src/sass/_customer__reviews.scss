@@ -5,12 +5,12 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 320px) and (max-width: 771px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
     width: 280px;
   }
-  @media screen and (min-width: 772px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-left: auto;
     margin-right: auto;
     width: 620px;
@@ -37,13 +37,13 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: 320px) and (max-width: 772px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 29px;
   }
-  @media screen and (min-width: 772px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-bottom: 19px;
   }
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
   }
   border-radius: 44px;
@@ -113,16 +113,17 @@
   }
 }
 .slider__box--label {
+  border-radius: 24px;
   background-color: #fafafa;
-  @media screen and (min-width: 320px) and (max-width: 772px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 30px;
     padding: 43px 50px 1px 50px;
   }
-  @media screen and (min-width: 772px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     margin-bottom: 24px;
     padding: 47px 36px 1px 40px;
   }
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
     padding: 47px 54px 1px 50px;
   }
@@ -145,17 +146,16 @@
     transparent
   );
   background-size: 62px 62px;
-  border-radius: 5px;
   font-family: DM Sans;
   font-style: normal;
   text-align: center;
   letter-spacing: 0.04em;
-  @media screen and (min-width: 320px) and (max-width: 771px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58333;
   }
-  @media screen and (min-width: 772px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -184,7 +184,7 @@
   }
 }
 
-@media screen and (min-width: 772px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .slider__span--second {
     padding-bottom: 6px;
     border-bottom: 1px solid #e1e1e1;
@@ -206,12 +206,12 @@
   text-align: center;
   color: #000000;
 
-  @media screen and (min-width: 320px) and (max-width: 771px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;
   }
-  @media screen and (min-width: 772px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     font-size: 16px;
     line-height: 186%;
   }
@@ -227,7 +227,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
-    @media screen and (min-width: 320px) and (max-width: 771px) {
+    @media screen and (min-width: 320px) and (max-width: 7671px) {
       margin-bottom: 18px;
     }
     width: 32px;
