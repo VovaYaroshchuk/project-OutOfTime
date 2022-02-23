@@ -8,14 +8,17 @@
   @media screen and (min-width: 320px) and (max-width: 771px) {
     padding-left: 20px;
     padding-right: 20px;
+    width: 280px;
   }
   @media screen and (min-width: 772px) and (max-width: 1280px) {
-    padding-left: 74px;
-    padding-right: 74px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 177px;
-    padding-right: 177px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 926px;
   }
 }
 
@@ -33,7 +36,16 @@
   height: 85px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 29px;
+
+  @media screen and (min-width: 320px) and (max-width: 772px) {
+    margin-bottom: 29px;
+  }
+  @media screen and (min-width: 772px) and (max-width: 1280px) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 772px) {
+    margin-bottom: 15px;
+  }
   border-radius: 44px;
 }
 .slider__box--first {
@@ -100,14 +112,28 @@
     background-position: center;
   }
 }
-
+.slider__box--label {
+  background-color: #fafafa;
+  @media screen and (min-width: 320px) and (max-width: 772px) {
+    margin-bottom: 30px;
+    padding: 43px 50px 1px 50px;
+  }
+  @media screen and (min-width: 772px) and (max-width: 1280px) {
+    margin-bottom: 24px;
+    padding: 47px 36px 1px 40px;
+  }
+  @media screen and (min-width: 772px) {
+    margin-bottom: 15px;
+    padding: 47px 54px 1px 50px;
+  }
+}
 .slider__label {
   position: relative;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
   color: #000000;
-  background-color: #fafafa;
+
   background-image: linear-gradient(
     0deg,
     #e1e1e1 1.61%,
@@ -128,24 +154,18 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58333;
-    width: 157px;
-    margin-bottom: 56px;
   }
   @media screen and (min-width: 772px) and (max-width: 1280px) {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 216%;
-    width: 460px;
-    margin-bottom: 58px;
   }
   @media screen and (min-width: 1280px) {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
-    width: 750px;
-    margin-bottom: 54px;
   }
 
   z-index: 1;
@@ -166,13 +186,13 @@
 
 @media screen and (min-width: 772px) and (max-width: 1279px) {
   .slider__span--second {
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     border-bottom: 1px solid #e1e1e1;
   }
 }
 @media screen and (min-width: 1280px) {
   .slider__span--first {
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #e1e1e1;
   }
 }
