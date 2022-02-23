@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[location-open]'),
-    closeModalBtn: document.querySelector('[location-close]'),
-    modal: document.querySelector('[location]'),
+    openModalBtn: document.querySelector('[data-location-open]'),
+    closeModalBtn: document.querySelector('[data-location-close]'),
+    modal: document.querySelector('[data-location]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -14,9 +14,9 @@
 })();
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[franchise-open]'),
-    closeModalBtn: document.querySelector('[franchise-close]'),
-    modal: document.querySelector('[franchise]'),
+    openModalBtn: document.querySelector('[data-franchise-open]'),
+    closeModalBtn: document.querySelector('[data-franchise-close]'),
+    modal: document.querySelector('[data-franchise]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
