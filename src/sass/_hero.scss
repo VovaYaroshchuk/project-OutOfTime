@@ -384,7 +384,7 @@
 }
 
 .button {
-  padding: 8px 13px 8px 13px;
+  padding: 7px 13px 7px 13px;
   border-radius: 20px;
   font-family: DM Sans;
   font-style: normal;
@@ -402,7 +402,8 @@
 }
 
 .hero__container-btn {
-  height: 24px;
+  // height: 24px;
+  display: flex;
 }
 .hero__container-products-btn {
   background-color: $brand-color;
@@ -413,6 +414,9 @@
     background-color: #c7133e;
   }
   margin-bottom: 0;
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+  }
 }
 
 .hero__container-him-btn {
@@ -428,7 +432,9 @@
 
 .hero__container-btn--link-how {
   color: #d41443;
+  width: fit-content;
 }
 .hero__container-btn--link-prod {
   color: #ffffff;
+  width: fit-content;
 }
