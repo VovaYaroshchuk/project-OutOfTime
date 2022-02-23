@@ -86,9 +86,10 @@ a {
 // Модальное меню
 .header-menu__container {
   position: fixed;
+  pointer-events: none;
   // display: none;
   opacity: 0;
-  pointer-events: auto;
+
   visibility: visible;
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
