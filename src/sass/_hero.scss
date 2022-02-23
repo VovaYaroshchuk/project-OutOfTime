@@ -241,6 +241,8 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/tab/hero-girl-tab-2x.png);
     }
+    width: 168px;
+    height: 133px;
     background-repeat: no-repeat;
     position: absolute;
     background-size: 168px 133px;
@@ -253,6 +255,8 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desk/hero-girl-desk-2x.png);
     }
+    width: 293px;
+    height: 232px;
     background-repeat: no-repeat;
     position: absolute;
     background-size: 293px 232px;
@@ -267,6 +271,8 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/tab/hero-milk-tab-2x.png);
     }
+    width: 124px;
+    height: 126px;
     background-repeat: no-repeat;
     position: absolute;
     background-size: 124px 126px;
