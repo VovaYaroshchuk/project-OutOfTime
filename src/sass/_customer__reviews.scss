@@ -1,5 +1,11 @@
 .slider__section {
-  margin-bottom: 132px;
+  margin-bottom: 225px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-bottom: 205px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 171px;
+  }
 }
 .slider__container {
   justify-content: center;
