@@ -323,6 +323,8 @@
   transition-property: transform babackground;
   transition-duration: 500ms;
   transition-delay: 250ms;
+
+  max-height: 100vh;
   &_size {
     @media screen and (max-width: 767px) {
       width: 100%;
@@ -364,9 +366,6 @@
   &__pre-title {
     @include mobile__title--h3;
   }
-  &__box_top {
-    margin-bottom: 30px;
-  }
   &__box_bottom {
     border: 5px solid #d41342;
     padding: 25px;
@@ -380,8 +379,9 @@
     }
   }
 }
+
 .franchise-form {
-  margin-top: 30px;
+  margin-top: 10px;
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -455,4 +455,17 @@
       line-height: 1.8;
     }
   }
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .franchise__box_bottom {
+    display: none;
+  }
+  .franchise__title {
+    margin-bottom: 20px;
+  }
+  // .franchise__pre-title::after {
+  //   content: 'ICE CREAM ITS GOOD FOR YOU MENTAL FILING';
+  //   display: inline-flex;
+  //   width: 50px;
+  // }
 }

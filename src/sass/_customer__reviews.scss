@@ -107,6 +107,7 @@
   margin-right: auto;
   margin-left: auto;
   color: #000000;
+  background-color: #fafafa;
   background-image: linear-gradient(
     0deg,
     #e1e1e1 1.61%,
@@ -118,6 +119,7 @@
     transparent
   );
   background-size: 62px 62px;
+  border-radius: 5px;
   font-family: DM Sans;
   font-style: normal;
   text-align: center;
@@ -236,9 +238,4 @@
   width: 13px !important;
   height: 13px !important;
   border-radius: 0 !important;
-}
-@media screen and (min-width: 1280px) {
-  .slider__label {
-    background-color: #fafafa;
-  }
 }
